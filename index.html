@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – Pati and Hav</title>
+<meta name="description" content="Privacy policy for Pati – The Break Cat and Hav – The Break Dog on Mac and Windows.">
 <style>
   body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; line-height: 1.6; color: #2b2118; background: #fbf4e8; margin: 0; }
   main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
@@ -13,68 +14,151 @@
   hr { border: 0; border-top: 1px solid #d3c3ac; margin: 44px 0; }
   a { color: #c25a1e; }
   nav { margin-bottom: 26px; }
+  code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.86em; background: #f1e5d1; border-radius: 4px; padding: 1px 5px; overflow-wrap: anywhere; }
+  ul { padding-left: 1.2em; margin: 6px 0; }
+  li { margin: 4px 0; }
 </style>
 </head>
 <body>
 <main>
-<nav><a href="#en">English</a> · <a href="#tr">Türkçe</a></nav>
+<nav><a href="#en">English</a> · <a href="#tr">Türkçe</a> · <a href="support.html">Support / Destek</a></nav>
 
 <section id="en">
 <h1>Privacy Policy</h1>
-<p class="date">Pati – The Break Cat and Hav – The Break Dog (Windows) · Last updated: 8 October 2026</p>
-<p>Pati and Hav are break reminder apps. They run entirely on your computer.</p>
+<p class="date">Pati – The Break Cat and Hav – The Break Dog · Mac (App Store and direct download) and Windows (Microsoft Store and direct download) · Last updated: 16 October 2026</p>
+<p>Pati and Hav are break reminder apps. They run entirely on your computer. This policy covers every version of both apps.</p>
+
 <h2>We collect nothing</h2>
-<p>The apps have no accounts, no analytics, no advertising and no tracking. They send no data to us or to anyone else. The only time an app goes online is when the Microsoft Store version of Pati or Hav asks the Microsoft Store about optional purchases (see "Purchases" below).</p>
+<p>The apps have no accounts, no sign-in, no analytics, no advertising and no tracking. They send no data to us or to anyone else. The current version (1.0) is free, contains no purchases and does not go online at all.</p>
+
 <h2>What stays on your computer</h2>
-<p>Your settings (work and break durations, the cat or dog you chose, toy or laser style, language, theme, sound on or off, live desktop on or off), a count of the breaks you completed today and the list of packs you own are stored in a small file in your Windows user profile. If the app closes unexpectedly, a crash log may be written to the same folder. Uninstalling the app normally removes them; if a "Pati" or "Hav" folder remains under your local app data folder, you can delete it.</p>
-<h2>Purchases (Microsoft Store versions)</h2>
-<p>Pati and Hav offer additional cat and dog packs as optional one-time in-app purchases. They are made entirely through the Microsoft Store with your Microsoft account. Your payment details never reach the app or us. The app learns from the Microsoft Store only the prices of the packs and which packs you own, and keeps the list of owned packs on your computer so the right cats or dogs are available when you are offline. Microsoft's privacy statement applies to the purchase and the payment.</p>
+<p>The following is stored only on your computer, in the app's own files, and never leaves it. We cannot see it.</p>
+<ul>
+<li><strong>Settings:</strong> work and break durations, the cat or dog you chose, laser or toy style, sound, language, live desktop, the heads-up and "Wait during calls and presentations" options, theme (Windows), whether you turned the scene music off, and how many breaks you completed today. On Mac they are kept in the app's own preferences (UserDefaults); on Windows in <code>settings.json</code>.</li>
+<li><strong>Names</strong> you give your cats or dogs, in <code>names.json</code>. If you clear a name, the pet's own name comes back and the entry is removed.</li>
+<li><strong>Looks</strong> you choose for them (fur or coat colour, pattern, eyes, ears, tail, markings), in <code>appearance.json</code> next to the names. "Restore original" removes that pet's entry.</li>
+<li><strong>Crash log (Windows):</strong> if the app closes unexpectedly, the technical details of the error may be written to the same folder. It stays on your computer.</li>
+</ul>
+
+<h2>Calls and presentations (meeting shield)</h2>
+<p>When a break is due and "Wait during calls and presentations" is on, the app checks only <em>whether</em> any app is currently using a camera or microphone (the Mac App Store version checks only the microphone, because the App Store sandbox does not allow checking the camera), and whether a presentation (Keynote or PowerPoint on Mac; presentation or full-screen mode reported by Windows) fills a screen. It then waits and starts the break about 30 seconds after the call or presentation ends. It never captures sound or video, never reads window titles or meeting names, asks for no camera, microphone or screen recording permission, and stores nothing about it. You can turn this off in settings.</p>
+
+<h2>Heads-up before a break</h2>
+<p>About 60 seconds before a break, a small window with your pet appears at the edge of the screen. To choose where it appears, the app only checks which screen the pointer is on at that moment; this is not stored. If the menu bar icon (Mac) or tray icon (Windows) is hidden, a small countdown appears near it; to decide this the app only checks whether its own icon is visible. You can turn the heads-up off in settings.</p>
+
 <h2>Keyboard, mouse and screen</h2>
-<p>During a break the app reacts to key presses and pointer movement so the pet can play with you, and to let you leave the break (Esc or Space, three times). While the optional "Lock with Pati / Hav" play lock is active, system shortcuts such as Alt+Tab are temporarily blocked. In all cases the app only reacts to the fact that a key was pressed: it never records, stores or transmits what you type. The apps take no screenshots and ask for no camera, microphone or location access.</p>
-<h2>Windows Hello and your Windows password</h2>
-<p>When you unlock the play lock, Windows itself asks for your PIN, fingerprint, face or password. The app never sees them; it only learns from Windows whether unlocking succeeded.</p>
+<p>The apps never read, record, store or send what you type, what you click or what is on your screen. They take no screenshots and ask for no Accessibility, screen recording, camera, microphone or location access. During a break or the play lock, the keys you press and the mouse movements you make on the app's own screen are used only for your pet's reaction in that moment and to let you leave a break (Esc or Space, three times); they are never written anywhere.</p>
+
+<h2>Play lock ("Lock with Pati" / "Lock with Hav")</h2>
+<p>The optional play lock covers the screen with your pet until you unlock it. It is not a real system lock: your session stays signed in. While it is on, switching apps is temporarily blocked (Mac: ⌘Tab, Dock, menu bar and Force Quit via standard macOS options; Windows: the Windows key, Alt+Tab and Alt+F4 via a temporary keyboard hook that looks only at those keys, records nothing and is removed when the lock ends).</p>
+<p>To unlock on <strong>macOS</strong>, you touch the Touch ID symbol shown inside the play-lock scene; macOS itself checks your fingerprint (LocalAuthentication), and "Unlock with password" opens macOS's own password window. On <strong>Windows</strong>, Windows asks for your PIN, fingerprint, face or password through Windows Hello or its own sign-in screen. The app never sees them; it only learns whether unlocking succeeded.</p>
+
+<h2>Live desktop</h2>
+<p>When "Live desktop" is on, the app draws your pet in its own window behind the desktop icons. It does not read, copy or change your wallpaper image, and clicks pass through to the desktop. When you turn it off, your own wallpaper is shown again.</p>
+
+<h2>Scene music and sounds</h2>
+<p>The quiet background music in break and play-lock scenes and the pet sounds come from files inside the app and are played locally. Nothing is streamed or downloaded. The speaker icon in the top-right corner of the scene turns the music off or on; that choice is saved with your settings.</p>
+
 <h2>Language, region and date</h2>
-<p>To show holiday cats and dogs on the right days and in the right countries, the apps read the date, language and region set in Windows. This information is used only on your computer and is not stored.</p>
-<h2>Start with Windows</h2>
-<p>When "Open at login" is on, Windows starts the app when you sign in. In both apps this option is on after installation so that break reminders keep working after a restart. You can turn it off in the app or in Windows Settings &gt; Apps &gt; Startup.</p>
+<p>To show holiday guests (special-day cats and dogs) on the right days and in the right countries, the apps read the date, language and region set on your computer. This information is used only on your computer and is not stored.</p>
+
+<h2>System settings</h2>
+<p><strong>Open at login:</strong> when it is on, macOS or Windows starts the app when you sign in, only for your user account. On Mac it is off until you choose it (for example in the first welcome screen); on Windows it is on after installation. You can turn it off in the app's settings, in macOS System Settings &gt; General &gt; Login Items, or in Windows Settings &gt; Apps &gt; Startup. The apps change no other system setting.</p>
+<p><strong>The ⓘ button (direct-download versions only):</strong> it reads your computer's display-sleep and password-after-sleep settings with the system's own tools (Mac: macOS tools; Windows: powercfg) and only shows them to you. Nothing is stored. The App Store and Microsoft Store versions do not run these tools.</p>
+
+<h2>Purchases (optional, future versions)</h2>
+<p>Version 1.0 has no purchases. A later version may offer optional extra cat and dog packs as one-time in-app purchases in the App Store and Microsoft Store versions. They would be made entirely through Apple or Microsoft with your own account; your payment details would never reach the app or us. The app would learn from the store only which packs you own (and their prices) and keep that list on your computer so the right pets are available offline. Apple's or Microsoft's privacy policy applies to the purchase and payment. This policy will be updated before purchases become available.</p>
+
 <h2>Feedback</h2>
-<p>"Send feedback" opens your own email app with a message addressed to <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a>. The message contains the app version, your Windows version and the app language. Nothing is sent unless you press Send. Emails you send us are used only to reply to you and to improve the apps.</p>
+<p>"Send feedback" opens your own email app with a message addressed to <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a>. The message contains the app version, your macOS or Windows version and the app language. Nothing is sent unless you press Send. Emails you send us are used only to reply to you and to improve the apps.</p>
+
+<h2>How to delete your data</h2>
+<p><strong>Mac:</strong> quit the app and move it from the Applications folder to the Trash. To also remove your settings, names and looks, run the command shown in the app under Settings &gt; "Privacy and data use…" in Terminal. It has this form (the app fills in the exact ID and path for your copy):</p>
+<p><code>defaults delete &lt;app ID&gt;; rm -f '…/Application Support/&lt;app ID&gt;/names.json' '…/Application Support/&lt;app ID&gt;/appearance.json'</code></p>
+<p>For the App Store version these files are inside the app's own container, <code>~/Library/Containers/&lt;app ID&gt;</code>; deleting that folder after removing the app also removes everything.</p>
+<p><strong>Windows:</strong> uninstall the app in Windows Settings &gt; Apps &gt; Installed apps. For the Microsoft Store version this also removes your settings, names and looks. For the direct-download version, you can also delete the folder <code>%LOCALAPPDATA%\Pati</code> or <code>%LOCALAPPDATA%\Hav</code>.</p>
+
 <h2>Children</h2>
-<p>The apps do not collect information from anyone, including children.</p>
+<p>The apps do not collect personal information from anyone, including children.</p>
+
+<h2>Your rights</h2>
+<p>We respect your rights under the GDPR and Türkiye's KVKK (Law No. 6698) to access, correct and delete your data. Because the apps send nothing to us, we hold no records about you; you can delete the data on your computer at any time as described above.</p>
+
 <h2>Changes</h2>
-<p>If this policy changes, the updated version will be published at this address.</p>
+<p>If this policy changes, the updated version will be published at this address and in the apps. If the apps ever start collecting data, this will be clearly announced in advance and your consent will be asked where required.</p>
+
 <h2>Contact</h2>
-<p>CAGames · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a></p>
+<p>Developer and data controller: Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">Support</a></p>
 </section>
 
 <hr>
 
 <section id="tr" lang="tr">
 <h1>Gizlilik Politikası</h1>
-<p class="date">Pati – The Break Cat ve Hav – The Break Dog (Windows) · Son güncelleme: 8 Ekim 2026</p>
-<p>Pati ve Hav mola hatırlatma uygulamalarıdır. Tamamen senin bilgisayarında çalışırlar.</p>
+<p class="date">Pati – The Break Cat ve Hav – The Break Dog · Mac (App Store ve doğrudan indirme) ile Windows (Microsoft Store ve doğrudan indirme) · Son güncelleme: 16 Ekim 2026</p>
+<p>Pati ve Hav mola hatırlatma uygulamalarıdır. Tamamen senin bilgisayarında çalışırlar. Bu politika iki uygulamanın da bütün sürümlerini kapsar.</p>
+
 <h2>Hiçbir veri toplamıyoruz</h2>
-<p>Uygulamalarda hesap, analiz, reklam ya da takip yoktur. Bize ya da başka birine hiçbir veri göndermezler. Uygulamanın internete çıktığı tek durum, Pati'nin ya da Hav'ın Microsoft Store sürümünün isteğe bağlı satın alımlar için Microsoft Store'a danışmasıdır (aşağıda "Satın alımlar").</p>
+<p>Uygulamalarda hesap, giriş, analiz, reklam ya da takip yoktur. Bize ya da başka birine hiçbir veri göndermezler. Şu anki sürüm (1.0) ücretsizdir, satın alma içermez ve hiç internete çıkmaz.</p>
+
 <h2>Bilgisayarında kalanlar</h2>
-<p>Ayarların (çalışma ve mola süreleri, seçtiğin kedi ya da köpek, oyuncak ya da lazer görünümü, dil, tema, sesin ve canlı masaüstünün açık ya da kapalı olması), bugün tamamladığın mola sayısı ve sahip olduğun paketlerin listesi Windows kullanıcı profilindeki küçük bir dosyada saklanır. Uygulama beklenmedik biçimde kapanırsa aynı klasöre bir hata kaydı yazılabilir. Uygulamayı kaldırınca bunlar normalde silinir; yerel uygulama verileri klasöründe "Pati" ya da "Hav" adlı bir klasör kalırsa onu silebilirsin.</p>
-<h2>Satın alımlar (Microsoft Store sürümleri)</h2>
-<p>Pati ve Hav, ek kedi ve köpek paketlerini isteğe bağlı, tek seferlik uygulama içi satın alma olarak sunar. Satın alımlar tamamen Microsoft Store üzerinden, Microsoft hesabınla yapılır. Ödeme bilgilerin uygulamaya ya da bize ulaşmaz. Uygulama, Microsoft Store'dan yalnızca paketlerin fiyatlarını ve hangi paketlerin sende olduğunu öğrenir; çevrimdışıyken de doğru kediler ya da köpekler açık olsun diye sahip olduğun paketlerin listesini bilgisayarında tutar. Satın alma ve ödeme sırasında Microsoft'un gizlilik bildirimi geçerlidir.</p>
+<p>Aşağıdakiler yalnızca bilgisayarında, uygulamanın kendi dosyalarında saklanır ve oradan çıkmaz. Biz bunları göremeyiz.</p>
+<ul>
+<li><strong>Ayarlar:</strong> çalışma ve mola süreleri, seçtiğin kedi ya da köpek, lazer ya da oyuncak görünümü, ses, dil, canlı masaüstü, moladan önce haber ve "Görüşme ve sunumda bekle" seçenekleri, tema (Windows), sahne müziğini kapatıp kapatmadığın ve bugün tamamladığın mola sayısı. Mac'te uygulamanın kendi tercihlerinde (UserDefaults), Windows'ta <code>settings.json</code> dosyasında tutulur.</li>
+<li>Kedilerine ya da köpeklerine verdiğin <strong>adlar</strong> <code>names.json</code> dosyasında. Bir adı silersen evcil hayvanın kendi adı geri gelir ve kayıt dosyadan silinir.</li>
+<li>Onlar için seçtiğin <strong>görünüşler</strong> (tüy rengi, desen, gözler, kulaklar, kuyruk, işaretler) adların yanındaki <code>appearance.json</code> dosyasında. "Orijinaline dön" o evcil hayvanın kaydını siler.</li>
+<li><strong>Hata kaydı (Windows):</strong> uygulama beklenmedik biçimde kapanırsa hatanın teknik ayrıntısı aynı klasöre yazılabilir. Bilgisayarından çıkmaz.</li>
+</ul>
+
+<h2>Görüşmeler ve sunumlar (görüşme kalkanı)</h2>
+<p>Mola zamanı geldiğinde "Görüşme ve sunumda bekle" açıksa uygulama yalnızca herhangi bir uygulamanın şu an kamerayı ya da mikrofonu kullanıp <em>kullanmadığına</em> (Mac App Store sürümü yalnızca mikrofona bakar; App Store'un güvenlik kuralları kameraya bakmaya izin vermez) ve bir sunumun (Mac'te Keynote ya da PowerPoint; Windows'ta Windows'un bildirdiği sunu ya da tam ekran durumu) bir ekranı kaplayıp kaplamadığına bakar. Sonra bekler ve görüşme ya da sunum bittikten yaklaşık 30 saniye sonra molayı başlatır. Ses ya da görüntü almaz, pencere başlıklarını ve görüşme adlarını okumaz, kamera, mikrofon ya da ekran kaydı izni istemez ve bununla ilgili hiçbir şey saklamaz. Bunu ayarlardan kapatabilirsin.</p>
+
+<h2>Moladan önce haber</h2>
+<p>Moladan yaklaşık 60 saniye önce ekranın kenarında evcil hayvanının olduğu küçük bir pencere belirir. Nerede görüneceğini seçmek için uygulama yalnızca imlecin o an hangi ekranda olduğuna bakar; bu bilgi saklanmaz. Menü çubuğu simgesi (Mac) ya da tepsi simgesi (Windows) gizli kalmışsa yakınında küçük bir geri sayım belirir; bunun için uygulama yalnızca kendi simgesinin görünüp görünmediğine bakar. Bu haberi ayarlardan kapatabilirsin.</p>
+
 <h2>Klavye, fare ve ekran</h2>
-<p>Mola sırasında uygulama, evcil hayvan seninle oynayabilsin ve moladan çıkabilesin (üç kez Esc ya da boşluk) diye tuş basışlarına ve imleç hareketine tepki verir. İsteğe bağlı "Pati / Hav ile kilitle" oyun kilidi açıkken Alt+Tab gibi sistem kısayolları geçici olarak engellenir. Her durumda uygulama yalnızca bir tuşa basıldığına tepki verir: ne yazdığını kaydetmez, saklamaz ve göndermez. Uygulamalar ekran görüntüsü almaz; kamera, mikrofon ya da konum izni istemez.</p>
-<h2>Windows Hello ve Windows şifren</h2>
-<p>Oyun kilidini açarken PIN'ini, parmak izini, yüzünü ya da şifreni Windows'un kendisi sorar. Uygulama bunları görmez; Windows'tan yalnızca kilidin açılıp açılmadığını öğrenir.</p>
+<p>Uygulamalar yazdıklarını, tıkladıklarını ya da ekranındakileri okumaz, kaydetmez, saklamaz ve göndermez. Ekran görüntüsü almaz; Erişilebilirlik, ekran kaydı, kamera, mikrofon ya da konum izni istemez. Mola ya da oyun kilidi sırasında uygulamanın kendi ekranında bastığın tuşlar ve fare hareketleri yalnızca evcil hayvanının o anki tepkisi ve moladan çıkabilmen (üç kez Esc ya da boşluk) için kullanılır; hiçbir yere yazılmaz.</p>
+
+<h2>Oyun kilidi ("Pati ile kilitle" / "Hav ile kilitle")</h2>
+<p>İsteğe bağlı oyun kilidi, sen açana kadar ekranı evcil hayvanınla kaplar. Gerçek bir sistem kilidi değildir: oturumun açık kalır. Açıkken uygulamalar arası geçiş geçici olarak engellenir (Mac: ⌘Tab, Dock, menü çubuğu ve Zorla Çık, macOS'un standart seçenekleriyle; Windows: Windows tuşu, Alt+Tab ve Alt+F4, yalnızca bu tuşlara bakan, hiçbir şey kaydetmeyen ve kilit bitince kaldırılan geçici bir klavye kancasıyla).</p>
+<p>Mac'te kilidi açarken oyun kilidi sahnesinin içinde görünen Touch ID simgesine dokunursun; parmak izini macOS'un kendisi doğrular (LocalAuthentication), "Şifreyle aç" ise macOS'un kendi şifre penceresini açar. <strong>Windows</strong>'ta PIN'ini, parmak izini, yüzünü ya da şifreni Windows Hello ya da Windows'un kendi ekranı sorar. Uygulama bunları görmez; yalnızca kilidin açılıp açılmadığını öğrenir.</p>
+
+<h2>Canlı masaüstü</h2>
+<p>"Canlı masaüstü" açıkken uygulama evcil hayvanını masaüstü simgelerinin arkasındaki kendi penceresinde çizer. Duvar kâğıdını okumaz, kopyalamaz ya da değiştirmez; tıklamalar masaüstüne geçer. Kapatınca kendi duvar kâğıdın yine görünür.</p>
+
+<h2>Sahne müziği ve sesler</h2>
+<p>Mola ve oyun kilidi sahnelerindeki kısık arka plan müziği ve evcil hayvan sesleri uygulamanın içindeki dosyalardan gelir ve bilgisayarında çalınır. Hiçbir şey internetten akıtılmaz ya da indirilmez. Sahnenin sağ üst köşesindeki hoparlör simgesi müziği kapatır ya da açar; bu seçim ayarlarınla birlikte saklanır.</p>
+
 <h2>Dil, bölge ve tarih</h2>
-<p>Özel gün kedilerini ve köpeklerini doğru günde ve doğru ülkede göstermek için uygulamalar, Windows'ta ayarlı tarihi, dili ve bölgeyi okur. Bu bilgiler yalnızca bilgisayarında kullanılır ve saklanmaz.</p>
-<h2>Windows ile başlatma</h2>
-<p>"Oturum açılışında başlat" açıkken Windows oturum açtığında uygulamayı başlatır. İki uygulamada da bu seçenek, mola hatırlatmaları yeniden başlatmadan sonra da sürsün diye kurulumdan sonra açık gelir. Bunu uygulamadan ya da Windows Ayarları &gt; Uygulamalar &gt; Başlangıç bölümünden kapatabilirsin.</p>
+<p>Özel gün konuklarını (özel gün kedileri ve köpekleri) doğru günde ve doğru ülkede göstermek için uygulamalar bilgisayarında ayarlı tarihi, dili ve bölgeyi okur. Bu bilgiler yalnızca bilgisayarında kullanılır ve saklanmaz.</p>
+
+<h2>Sistem ayarları</h2>
+<p><strong>Oturum açılışında başlat:</strong> açıkken macOS ya da Windows, oturum açtığında uygulamayı yalnızca senin kullanıcı hesabın için başlatır. Mac'te sen seçene kadar (örneğin ilk karşılama ekranında) kapalıdır; Windows'ta kurulumdan sonra açık gelir. Uygulamanın ayarlarından, macOS Sistem Ayarları &gt; Genel &gt; Giriş Öğeleri bölümünden ya da Windows Ayarları &gt; Uygulamalar &gt; Başlangıç bölümünden kapatabilirsin. Uygulamalar bunun dışında hiçbir sistem ayarını değiştirmez.</p>
+<p><strong>ⓘ düğmesi (yalnızca doğrudan indirilen sürümler):</strong> bilgisayarının ekran kapanma ve uykudan sonra şifre isteme ayarlarını sistemin kendi araçlarıyla (Mac: macOS araçları; Windows: powercfg) okuyup yalnızca sana gösterir. Hiçbir şey saklanmaz. App Store ve Microsoft Store sürümleri bu araçları çalıştırmaz.</p>
+
+<h2>Satın alımlar (isteğe bağlı, ileriki sürümler)</h2>
+<p>1.0 sürümünde satın alma yoktur. İleriki bir sürüm, App Store ve Microsoft Store sürümlerinde ek kedi ve köpek paketlerini isteğe bağlı, tek seferlik uygulama içi satın alma olarak sunabilir. Satın alımlar tamamen Apple ya da Microsoft üzerinden, kendi hesabınla yapılır; ödeme bilgilerin uygulamaya ya da bize ulaşmaz. Uygulama mağazadan yalnızca hangi paketlerin sende olduğunu (ve fiyatlarını) öğrenir ve çevrimdışıyken de doğru evcil hayvanlar açık olsun diye bu listeyi bilgisayarında tutar. Satın alma ve ödeme sırasında Apple'ın ya da Microsoft'un gizlilik politikası geçerlidir. Satın alımlar gelmeden önce bu politika güncellenir.</p>
+
 <h2>Geri bildirim</h2>
-<p>"Görüş ve öneri gönder" kendi e-posta uygulamanda <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> adresine yazılmış bir ileti açar. İletide uygulama sürümü, Windows sürümün ve uygulama dili yer alır. Gönder'e basmadıkça hiçbir şey gönderilmez. Bize gönderdiğin e-postalar yalnızca sana yanıt vermek ve uygulamaları geliştirmek için kullanılır.</p>
+<p>"Görüş ve öneri gönder" kendi e-posta uygulamanda <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> adresine yazılmış bir ileti açar. İletide uygulama sürümü, macOS ya da Windows sürümün ve uygulama dili yer alır. Gönder'e basmadıkça hiçbir şey gönderilmez. Bize gönderdiğin e-postalar yalnızca sana yanıt vermek ve uygulamaları geliştirmek için kullanılır.</p>
+
+<h2>Verilerini silmek</h2>
+<p><strong>Mac:</strong> uygulamayı kapatıp Programlar klasöründen çöpe at. Ayarlarını, adları ve görünüşleri de silmek istersen uygulamada Ayarlar &gt; "Gizlilik ve veri kullanımı…" penceresinde yazan komutu Terminal'de çalıştır. Komut şu biçimdedir (tam kimliği ve yolu uygulama senin kopyan için doldurur):</p>
+<p><code>defaults delete &lt;uygulama kimliği&gt;; rm -f '…/Application Support/&lt;uygulama kimliği&gt;/names.json' '…/Application Support/&lt;uygulama kimliği&gt;/appearance.json'</code></p>
+<p>App Store sürümünde bu dosyalar uygulamanın kendi kabındadır: <code>~/Library/Containers/&lt;uygulama kimliği&gt;</code>. Uygulamayı sildikten sonra bu klasörü silmek de her şeyi kaldırır.</p>
+<p><strong>Windows:</strong> uygulamayı Windows Ayarları &gt; Uygulamalar &gt; Yüklü uygulamalar bölümünden kaldır. Microsoft Store sürümünde ayarların, adlar ve görünüşler de onunla birlikte silinir. Doğrudan indirilen sürümde ayrıca <code>%LOCALAPPDATA%\Pati</code> ya da <code>%LOCALAPPDATA%\Hav</code> klasörünü silebilirsin.</p>
+
 <h2>Çocuklar</h2>
-<p>Uygulamalar, çocuklar dahil hiç kimseden bilgi toplamaz.</p>
+<p>Uygulamalar çocuklar dahil hiç kimseden kişisel bilgi toplamaz.</p>
+
+<h2>Hakların</h2>
+<p>KVKK (6698 sayılı Kanun) ve GDPR kapsamındaki bilgi alma, düzeltme ve silme haklarına saygı duyulur. Uygulamalar bize hiçbir şey göndermediği için elimizde seninle ilgili bir kayıt yoktur; bilgisayarındaki verileri yukarıdaki gibi istediğin zaman silebilirsin.</p>
+
 <h2>Değişiklikler</h2>
-<p>Bu politika değişirse güncel hali bu adreste yayınlanır.</p>
+<p>Bu politika değişirse güncel hali bu adreste ve uygulamalarda yayımlanır. Uygulamalar ileride veri toplamaya başlarsa bu önceden açıkça bildirilir ve gerektiğinde iznin istenir.</p>
+
 <h2>İletişim</h2>
-<p>CAGames · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a></p>
+<p>Geliştirici ve veri sorumlusu: Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">Destek</a></p>
 </section>
 </main>
 </body>
