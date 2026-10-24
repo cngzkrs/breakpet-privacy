@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Privacy Policy – Pati and Hav</title>
 <meta name="description" content="Privacy policy for Pati – The Break Cat and Hav – The Break Dog on Mac and Windows.">
+<link rel="alternate" hreflang="x-default" href="https://cngzkrs.github.io/breakpet-privacy/">
 <style>
   body { font-family: "Segoe UI", system-ui, -apple-system, sans-serif; line-height: 1.6; color: #2b2118; background: #fbf4e8; margin: 0; }
   main { max-width: 760px; margin: 0 auto; padding: 32px 20px 64px; }
@@ -13,17 +14,21 @@
   .date { color: #75624f; margin: 0 0 20px; }
   hr { border: 0; border-top: 1px solid #d3c3ac; margin: 44px 0; }
   a { color: #c25a1e; }
-  nav { margin-bottom: 26px; }
+  nav { margin-bottom: 26px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; }
+  nav select { font: inherit; color: inherit; background: #fffaf2; border: 1px solid #d3c3ac; border-radius: 8px; padding: 4px 8px; }
+  html.js main > hr, html.js main > section { display: none; }
+  html.js main > section.on { display: block; }
   code { font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace; font-size: 0.86em; background: #f1e5d1; border-radius: 4px; padding: 1px 5px; overflow-wrap: anywhere; }
   ul { padding-left: 1.2em; margin: 6px 0; }
   li { margin: 4px 0; }
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <main>
-<nav><a href="#en">English</a> · <a href="#tr">Türkçe</a> · <a href="support.html">Support / Destek</a></nav>
+<nav><label><span hidden>Language</span><select id="lang" aria-label="Language"><option value="en" lang="en">English (US)</option><option value="de" lang="de">Deutsch</option><option value="en-GB" lang="en-GB">English (UK)</option><option value="es" lang="es">Español</option><option value="fr" lang="fr">Français</option><option value="it" lang="it">Italiano</option><option value="pt-BR" lang="pt-BR">Português (Brasil)</option><option value="tr" lang="tr">Türkçe</option><option value="ja" lang="ja">日本語</option><option value="zh-Hans" lang="zh-Hans">简体中文</option><option value="ko" lang="ko">한국어</option></select></label> <a id="other" href="support.html">Support</a><noscript> · <a href="#en">English (US)</a> · <a href="#de">Deutsch</a> · <a href="#en-GB">English (UK)</a> · <a href="#es">Español</a> · <a href="#fr">Français</a> · <a href="#it">Italiano</a> · <a href="#pt-BR">Português (Brasil)</a> · <a href="#tr">Türkçe</a> · <a href="#ja">日本語</a> · <a href="#zh-Hans">简体中文</a> · <a href="#ko">한국어</a></noscript></nav>
 
-<section id="en">
+<section id="en" lang="en">
 <h1>Privacy Policy</h1>
 <p class="date">Pati – The Break Cat and Hav – The Break Dog · Mac (App Store and direct download) and Windows (Microsoft Store and direct download) · Last updated: 17 October 2026</p>
 <p>Pati and Hav are break reminder apps. They run entirely on your computer. This policy covers every version of both apps.</p>
@@ -100,6 +105,468 @@
 
 <hr>
 
+<section id="de" lang="de">
+<h1>Datenschutzerklärung</h1>
+<p class="date">Pati – The Break Cat und Hav – The Break Dog · Mac (App Store und direkter Download) und Windows (Microsoft Store und direkter Download) · Zuletzt aktualisiert: 17. Oktober 2026</p>
+<p>Pati und Hav sind Apps, die dich an Pausen erinnern. Sie laufen vollständig auf deinem Computer. Diese Erklärung gilt für alle Versionen beider Apps.</p>
+
+<h2>Wir erheben nichts</h2>
+<p>Die Apps haben keine Konten, keine Anmeldung, keine Analyse, keine Werbung und kein Tracking. Sie senden keine Daten an uns oder an andere. Die Versionen aus dem App Store und dem Microsoft Store gehen nur für optionale In-App-Käufe online, die vollständig über Apple oder Microsoft abgewickelt werden (siehe Käufe).</p>
+
+<h2>Was auf deinem Computer bleibt</h2>
+<p>Folgendes wird nur auf deinem Computer gespeichert, in den eigenen Dateien der App, und verlässt ihn nie. Wir können es nicht sehen.</p>
+<ul>
+<li><strong>Einstellungen:</strong> Arbeits- und Pausendauer, die gewählte Katze oder der gewählte Hund, Laser- oder Spielzeugstil, Ton, Sprache, Live-Schreibtisch, die Vorwarnung und die Option „Bei Anrufen und Präsentationen warten“, Design (Windows), ob du die Szenenmusik ausgeschaltet hast, wie viele Pausen du heute gemacht hast und für die letzten 30 Tage Zahlen pro Tag (Pausen, wie oft dein Haustier den Laser oder das Spielzeug gefangen hat, Sekunden Streicheln, wie oft es dir den Bauch gezeigt hat) sowie die Gesamtzahl deiner Pausen. Das sind nur Zahlen für die Pfotenspur, den Tagesrückblick und die Pausen-Jubiläen; Tage, die älter als 30 Tage sind, werden automatisch gelöscht. Auf dem Mac liegen sie in den eigenen Einstellungen der App (UserDefaults), unter Windows in <code>settings.json</code>.</li>
+<li><strong>Namen</strong>, die du deinen Katzen oder Hunden gibst, in <code>names.json</code>. Wenn du einen Namen löschst, kehrt der eigene Name des Haustiers zurück und der Eintrag wird entfernt.</li>
+<li><strong>Aussehen</strong>, das du für sie wählst (Fellfarbe, Muster, Augen, Ohren, Rute, Abzeichen), in <code>appearance.json</code> neben den Namen. „Original wiederherstellen“ entfernt den Eintrag dieses Haustiers.</li>
+<li><strong>Absturzprotokoll (Windows):</strong> Wenn die App unerwartet beendet wird, können die technischen Details des Fehlers in denselben Ordner geschrieben werden. Sie bleiben auf deinem Computer.</li>
+</ul>
+
+<h2>Anrufe und Präsentationen (Meeting-Schutz)</h2>
+<p>Wenn eine Pause fällig ist und „Bei Anrufen und Präsentationen warten“ eingeschaltet ist, prüft die App nur, <em>ob</em> gerade eine App eine Kamera oder ein Mikrofon nutzt (die Version aus dem Mac App Store prüft nur das Mikrofon, weil die Sandbox des App Store keine Prüfung der Kamera erlaubt) und ob eine Präsentation (Keynote oder PowerPoint auf dem Mac; der von Windows gemeldete Präsentations- oder Vollbildmodus) einen Bildschirm ausfüllt. Dann wartet sie und startet die Pause etwa 30 Sekunden nach dem Ende des Anrufs oder der Präsentation. Sie nimmt nie Ton oder Bild auf, liest nie Fenstertitel oder Namen von Besprechungen, fragt nicht nach Berechtigungen für Kamera, Mikrofon oder Bildschirmaufnahme und speichert nichts darüber. Du kannst das in den Einstellungen ausschalten.</p>
+
+<h2>Vorwarnung vor einer Pause</h2>
+<p>Etwa 60 Sekunden vor einer Pause erscheint am Bildschirmrand ein kleines Fenster mit deinem Haustier. Um zu entscheiden, wo es erscheint, prüft die App nur, auf welchem Bildschirm sich der Zeiger in diesem Moment befindet; das wird nicht gespeichert. Ist das Symbol in der Menüleiste (Mac) oder im Infobereich (Windows) ausgeblendet, erscheint in seiner Nähe ein kleiner Countdown; dafür prüft die App nur, ob ihr eigenes Symbol sichtbar ist. Du kannst die Vorwarnung in den Einstellungen ausschalten.</p>
+
+<h2>Tastatur, Maus und Bildschirm</h2>
+<p>Die Apps lesen, erfassen, speichern oder senden nie, was du tippst, worauf du klickst oder was auf deinem Bildschirm ist. Sie machen keine Bildschirmfotos und fragen nicht nach Zugriff auf Bedienungshilfen, Bildschirmaufnahme, Kamera, Mikrofon oder Standort. Während einer Pause oder der Spielsperre werden die Tasten, die du drückst, und die Mausbewegungen auf dem eigenen Bildschirm der App nur für die Reaktion deines Haustiers in diesem Moment verwendet und damit du eine Pause verlassen kannst (dreimal Esc oder Leertaste); sie werden nirgendwo gespeichert.</p>
+
+<h2>Postkarten</h2>
+<p>Die Apps können einen Moment in ein Postkartenbild verwandeln (die Szene deines Haustiers, sein Name, das Datum, die Zahl deiner heutigen Pausen und eine kurze Notiz, etwa wie oft dein Haustier in dieser Pause den Laser oder das Spielzeug gefangen hat). Es wird auf deinem Computer aus den eigenen Zeichnungen der App erstellt; es ist kein Bildschirmfoto. Es geht nur dorthin, wohin du es mit „Teilen“, „Sichern“ (Windows: „Speichern“) oder „Kopieren“ schickst; die Apps laden es nirgendwohin hoch. Die vorübergehende Kopie zum Teilen wird bei der nächsten Postkarte gelöscht oder wenn die App beendet oder wieder geöffnet wird.</p>
+
+<h2>Kurzbefehle, Siri und Spotlight (Mac) · Sprungliste (Windows)</h2>
+<p>Auf dem Mac bieten die Apps einige Aktionen in der App „Kurzbefehle“, in Siri und in Spotlight an: jetzt Pause machen, anhalten, fortsetzen, mit Pati oder Hav sperren, Zeit bis zur nächsten Pause und die Zahl der heutigen Pausen. Unter Windows bietet ein Rechtsklick auf die App in der Taskleiste oder im Startmenü: jetzt Pause machen, 30 Minuten anhalten und mit Pati oder Hav sperren. Diese Aktionen tun genau das, was die Tasten im Fenster der App tun, und laufen nur, wenn du sie startest (oder in einer Automation, die du selbst eingerichtet hast). Sie speichern nichts Neues und senden nichts. Wenn du Siri nutzt, verarbeitet Apple deine Sprachanfrage; die App erhält nur die auszuführende Aktion.</p>
+
+<h2>Spielsperre („Mit Pati sperren“ / „Mit Hav sperren“)</h2>
+<p>Die optionale Spielsperre bedeckt den Bildschirm mit deinem Haustier, bis du sie entsperrst. Sie ist keine echte Systemsperre: Deine Sitzung bleibt angemeldet. Solange sie aktiv ist, ist das Wechseln zwischen Apps vorübergehend blockiert (Mac: ⌘Tab, Dock, Menüleiste und „Sofort beenden“ über die Standardoptionen von macOS; Windows: die Windows-Taste, Alt+Tab und Alt+F4 über einen vorübergehenden Tastatur-Hook, der nur auf diese Tasten achtet, nichts aufzeichnet und entfernt wird, wenn die Sperre endet).</p>
+<p>Zum Entsperren unter <strong>macOS</strong> berührst du das Touch-ID-Symbol, das in der Szene der Spielsperre angezeigt wird; macOS selbst prüft deinen Fingerabdruck (LocalAuthentication), und „Mit Passwort entsperren“ öffnet das eigene Passwortfenster von macOS. Unter <strong>Windows</strong> fragt Windows über Windows Hello oder seinen eigenen Anmeldebildschirm nach deiner PIN, deinem Fingerabdruck, deinem Gesicht oder deinem Passwort. Die App sieht diese nie; sie erfährt nur, ob das Entsperren erfolgreich war.</p>
+
+<h2>Live-Schreibtisch</h2>
+<p>Wenn „Live-Pati auf dem Schreibtisch“ bzw. „Live-Hav auf dem Schreibtisch“ eingeschaltet ist, zeichnet die App dein Haustier in einem eigenen Fenster hinter den Schreibtischsymbolen. Sie liest, kopiert oder ändert dein Hintergrundbild nicht, und Klicks werden an den Schreibtisch durchgereicht. Wenn du es ausschaltest, wird wieder dein eigenes Hintergrundbild angezeigt.</p>
+
+<h2>Szenenmusik und Geräusche</h2>
+<p>Die leise Hintergrundmusik in den Szenen von Pause und Spielsperre und die Geräusche der Haustiere stammen aus Dateien in der App und werden lokal abgespielt. Nichts wird gestreamt oder heruntergeladen. Das Lautsprechersymbol oben rechts in der Szene schaltet die Musik aus oder ein; diese Wahl wird mit deinen Einstellungen gespeichert.</p>
+
+<h2>Sprache, Region und Datum</h2>
+<p>Um Feiertagsgäste (Katzen und Hunde für besondere Tage) an den richtigen Tagen und in den richtigen Ländern zu zeigen, lesen die Apps das Datum, die Sprache und die Region, die auf deinem Computer eingestellt sind. Diese Informationen werden nur auf deinem Computer verwendet und nicht gespeichert.</p>
+
+<h2>Systemeinstellungen</h2>
+<p><strong>Bei der Anmeldung öffnen:</strong> Wenn diese Option eingeschaltet ist, startet macOS oder Windows die App bei deiner Anmeldung, nur für dein Benutzerkonto. Auf dem Mac ist sie ausgeschaltet, bis du sie wählst (zum Beispiel im ersten Willkommensbildschirm); unter Windows ist sie nach der Installation eingeschaltet. Du kannst sie in den Einstellungen der App ausschalten, in den macOS-Systemeinstellungen &gt; Allgemein &gt; Anmeldeobjekte oder in den Windows-Einstellungen &gt; Apps &gt; Autostart. Die Apps ändern keine anderen Systemeinstellungen.</p>
+<p><strong>Die Taste ⓘ (nur Versionen zum direkten Download):</strong> Sie liest mit den eigenen Werkzeugen des Systems (Mac: macOS-Werkzeuge; Windows: powercfg) die Einstellungen deines Computers für den Bildschirm-Ruhezustand und das Passwort nach dem Ruhezustand und zeigt sie dir nur an. Nichts wird gespeichert. Die Versionen aus dem App Store und dem Microsoft Store führen diese Werkzeuge nicht aus.</p>
+
+<h2>Käufe (Versionen aus dem App Store und dem Microsoft Store)</h2>
+<p>Die Versionen aus dem App Store und dem Microsoft Store bieten optionale zusätzliche Katzen- und Hundepakete als einmalige In-App-Käufe an; drei Haustiere und die Gäste für besondere Tage sind immer kostenlos. Käufe werden vollständig über Apple oder Microsoft mit deinem eigenen Konto abgewickelt; deine Zahlungsdaten erreichen nie die App oder uns. Die App erfährt vom Store nur die Preise der Pakete und welche Pakete du besitzt, und speichert diese Liste auf deinem Computer, damit die richtigen Haustiere auch offline verfügbar sind. Beim Wiederherstellen der Käufe wird der Store erneut gefragt. Für den Kauf und die Zahlung gilt die Datenschutzrichtlinie von Apple bzw. Microsoft. Die Versionen zum direkten Download enthalten keine Käufe.</p>
+
+<h2>Feedback</h2>
+<p>„Feedback senden“ öffnet deine eigene E-Mail-App mit einer Nachricht an <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a>. Die Nachricht enthält die App-Version, deine macOS- oder Windows-Version und die Sprache der App. Nichts wird gesendet, solange du nicht auf „Senden“ drückst. E-Mails, die du uns schickst, werden nur verwendet, um dir zu antworten und die Apps zu verbessern.</p>
+
+<h2>So löschst du deine Daten</h2>
+<p><strong>Mac:</strong> Beende die App und bewege sie aus dem Ordner „Programme“ in den Papierkorb. Um auch deine Einstellungen, Pausenzahlen, Namen und das Aussehen zu entfernen, führe Folgendes im Terminal aus (die App zeigt auch den genauen Befehl für deine Version unter Einstellungen &gt; „Datenschutz und Datennutzung …“):</p>
+<p>Pati: <code>defaults delete com.canakarsu.pati; rm -f ~/Library/Application\ Support/com.canakarsu.pati/names.json ~/Library/Application\ Support/com.canakarsu.pati/appearance.json</code></p>
+<p>Hav: <code>defaults delete com.canakarsu.hav; rm -f ~/Library/Application\ Support/com.canakarsu.hav/names.json ~/Library/Application\ Support/com.canakarsu.hav/appearance.json</code></p>
+<p>Die Version aus dem App Store bewahrt all das im eigenen Container der App auf. Nachdem du die App entfernt hast, entfernt das Löschen dieses Ordners alles: <code>rm -rf ~/Library/Containers/com.canakarsu.pati</code> (Hav: <code>rm -rf ~/Library/Containers/com.canakarsu.hav</code>).</p>
+<p><strong>Windows:</strong> Deinstalliere die App in den Windows-Einstellungen &gt; Apps &gt; Installierte Apps. Bei der Version aus dem Microsoft Store werden damit auch deine Einstellungen, Namen und das Aussehen entfernt. Bei der Version zum direkten Download kannst du zusätzlich den Ordner <code>%LOCALAPPDATA%\Pati</code> oder <code>%LOCALAPPDATA%\Hav</code> löschen.</p>
+
+<h2>Kinder</h2>
+<p>Die Apps erheben von niemandem personenbezogene Daten, auch nicht von Kindern.</p>
+
+<h2>Deine Rechte</h2>
+<p>Wir achten deine Rechte nach der DSGVO (GDPR) und dem türkischen KVKK (Gesetz Nr. 6698) auf Auskunft, Berichtigung und Löschung deiner Daten. Da die Apps uns nichts senden, haben wir keine Aufzeichnungen über dich; du kannst die Daten auf deinem Computer jederzeit wie oben beschrieben löschen.</p>
+
+<h2>Änderungen</h2>
+<p>Wenn sich diese Erklärung ändert, wird die aktualisierte Fassung unter dieser Adresse und in den Apps veröffentlicht. Sollten die Apps jemals beginnen, Daten zu erheben, wird dies vorher deutlich angekündigt und, wo erforderlich, deine Einwilligung eingeholt.</p>
+
+<h2>Kontakt</h2>
+<p>Entwickler und Verantwortlicher: Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">Support</a></p>
+</section>
+
+<hr>
+
+<section id="en-GB" lang="en-GB">
+<h1>Privacy Policy</h1>
+<p class="date">Pati – The Break Cat and Hav – The Break Dog · Mac (App Store and direct download) and Windows (Microsoft Store and direct download) · Last updated: 17 October 2026</p>
+<p>Pati and Hav are break reminder apps. They run entirely on your computer. This policy covers every version of both apps.</p>
+
+<h2>We collect nothing</h2>
+<p>The apps have no accounts, no sign-in, no analytics, no advertising and no tracking. They send no data to us or to anyone else. The only time the App Store and Microsoft Store versions go online is for optional in-app purchases, which go entirely through Apple or Microsoft (see Purchases).</p>
+
+<h2>What stays on your computer</h2>
+<p>The following is stored only on your computer, in the app's own files, and never leaves it. We cannot see it.</p>
+<ul>
+<li><strong>Settings:</strong> work and break durations, the cat or dog you chose, laser or toy style, sound, language, live desktop, the heads-up and "Wait during calls and presentations" options, theme (Windows), whether you turned the scene music off, how many breaks you completed today and, for the last 30 days, per-day counts (breaks, how often your pet caught the laser or toy, seconds of petting, belly rolls) plus your total number of breaks. These are only numbers, used for the paw trail, the end-of-day summary and break milestones; days older than 30 days are deleted automatically. On Mac they are kept in the app's own preferences (UserDefaults); on Windows in <code>settings.json</code>.</li>
+<li><strong>Names</strong> you give your cats or dogs, in <code>names.json</code>. If you clear a name, the pet's own name comes back and the entry is removed.</li>
+<li><strong>Looks</strong> you choose for them (fur or coat colour, pattern, eyes, ears, tail, markings), in <code>appearance.json</code> next to the names. "Restore original" removes that pet's entry.</li>
+<li><strong>Crash log (Windows):</strong> if the app closes unexpectedly, the technical details of the error may be written to the same folder. It stays on your computer.</li>
+</ul>
+
+<h2>Calls and presentations (meeting shield)</h2>
+<p>When a break is due and "Wait during calls and presentations" is on, the app checks only <em>whether</em> any app is currently using a camera or microphone (the Mac App Store version checks only the microphone, because the App Store sandbox does not allow checking the camera), and whether a presentation (Keynote or PowerPoint on Mac; presentation or full-screen mode reported by Windows) fills a screen. It then waits and starts the break about 30 seconds after the call or presentation ends. It never captures sound or video, never reads window titles or meeting names, asks for no camera, microphone or screen recording permission, and stores nothing about it. You can turn this off in settings.</p>
+
+<h2>Heads-up before a break</h2>
+<p>About 60 seconds before a break, a small window with your pet appears at the edge of the screen. To choose where it appears, the app only checks which screen the pointer is on at that moment; this is not stored. If the menu bar icon (Mac) or tray icon (Windows) is hidden, a small countdown appears near it; to decide this the app only checks whether its own icon is visible. You can turn the heads-up off in settings.</p>
+
+<h2>Keyboard, mouse and screen</h2>
+<p>The apps never read, record, store or send what you type, what you click or what is on your screen. They take no screenshots and ask for no Accessibility, screen recording, camera, microphone or location access. During a break or the play lock, the keys you press and the mouse movements you make on the app's own screen are used only for your pet's reaction in that moment and to let you leave a break (Esc or Space, three times); they are never written anywhere.</p>
+
+<h2>Postcards</h2>
+<p>The apps can turn a moment into a postcard image (your pet's scene, its name, the date, today's break count and a short note, such as how many times your pet caught the laser or toy in that break). It is drawn on your computer from the app's own artwork; it is not a screenshot. It goes only where you send it with Share, Save or Copy; the apps never upload it anywhere. The temporary copy made for sharing is deleted with the next postcard, or when the app quits or opens again.</p>
+
+<h2>Shortcuts, Siri and Spotlight (Mac) · Jump list (Windows)</h2>
+<p>On Mac, the apps offer a few actions in the Shortcuts app, in Siri and in Spotlight: take a break now, pause, resume, lock with Pati or Hav, time until the next break and today's break count. On Windows, right-clicking the app on the taskbar or in Start offers take a break now, pause for 30 minutes and lock with Pati or Hav. These actions do exactly what the buttons in the app's window do and run only when you start them (or in an automation you set up yourself). They store nothing new and send nothing. If you use Siri, Apple handles your voice request; the app only receives the action to run.</p>
+
+<h2>Play lock ("Lock with Pati" / "Lock with Hav")</h2>
+<p>The optional play lock covers the screen with your pet until you unlock it. It is not a real system lock: your session stays signed in. While it is on, switching apps is temporarily blocked (Mac: ⌘Tab, Dock, menu bar and Force Quit via standard macOS options; Windows: the Windows key, Alt+Tab and Alt+F4 via a temporary keyboard hook that looks only at those keys, records nothing and is removed when the lock ends).</p>
+<p>To unlock on <strong>macOS</strong>, you touch the Touch ID symbol shown inside the play-lock scene; macOS itself checks your fingerprint (LocalAuthentication), and "Unlock with password" opens macOS's own password window. On <strong>Windows</strong>, Windows asks for your PIN, fingerprint, face or password through Windows Hello or its own sign-in screen. The app never sees them; it only learns whether unlocking succeeded.</p>
+
+<h2>Live desktop</h2>
+<p>When "Live desktop" is on, the app draws your pet in its own window behind the desktop icons. It does not read, copy or change your wallpaper image, and clicks pass through to the desktop. When you turn it off, your own wallpaper is shown again.</p>
+
+<h2>Scene music and sounds</h2>
+<p>The quiet background music in break and play-lock scenes and the pet sounds come from files inside the app and are played locally. Nothing is streamed or downloaded. The speaker icon in the top-right corner of the scene turns the music off or on; that choice is saved with your settings.</p>
+
+<h2>Language, region and date</h2>
+<p>To show holiday guests (special-day cats and dogs) on the right days and in the right countries, the apps read the date, language and region set on your computer. This information is used only on your computer and is not stored.</p>
+
+<h2>System settings</h2>
+<p><strong>Open at login:</strong> when it is on, macOS or Windows starts the app when you sign in, only for your user account. On Mac it is off until you choose it (for example in the first welcome screen); on Windows it is on after installation. You can turn it off in the app's settings, in macOS System Settings &gt; General &gt; Login Items, or in Windows Settings &gt; Apps &gt; Startup. The apps change no other system setting.</p>
+<p><strong>The ⓘ button (direct-download versions only):</strong> it reads your computer's display-sleep and password-after-sleep settings with the system's own tools (Mac: macOS tools; Windows: powercfg) and only shows them to you. Nothing is stored. The App Store and Microsoft Store versions do not run these tools.</p>
+
+<h2>Purchases (App Store and Microsoft Store versions)</h2>
+<p>The App Store and Microsoft Store versions offer optional extra cat and dog packs as one-time in-app purchases; three pets and the special-day guests are always free. Purchases are made entirely through Apple or Microsoft with your own account; your payment details never reach the app or us. The app learns from the store only the pack prices and which packs you own, and keeps that list on your computer so the right pets are available offline. Restoring purchases asks the store again. Apple's or Microsoft's privacy policy applies to the purchase and payment. The direct-download versions contain no purchases.</p>
+
+<h2>Feedback</h2>
+<p>"Send feedback" opens your own email app with a message addressed to <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a>. The message contains the app version, your macOS or Windows version and the app language. Nothing is sent unless you press Send. Emails you send us are used only to reply to you and to improve the apps.</p>
+
+<h2>How to delete your data</h2>
+<p><strong>Mac:</strong> quit the app and move it from the Applications folder to the Bin. To also remove your settings, break counts, names and looks, run this in Terminal (the app also shows the exact command for your copy under Settings &gt; "Privacy and data use…"):</p>
+<p>Pati: <code>defaults delete com.canakarsu.pati; rm -f ~/Library/Application\ Support/com.canakarsu.pati/names.json ~/Library/Application\ Support/com.canakarsu.pati/appearance.json</code></p>
+<p>Hav: <code>defaults delete com.canakarsu.hav; rm -f ~/Library/Application\ Support/com.canakarsu.hav/names.json ~/Library/Application\ Support/com.canakarsu.hav/appearance.json</code></p>
+<p>The App Store version keeps all of this inside the app's own container. After removing the app, deleting that folder removes everything: <code>rm -rf ~/Library/Containers/com.canakarsu.pati</code> (Hav: <code>rm -rf ~/Library/Containers/com.canakarsu.hav</code>).</p>
+<p><strong>Windows:</strong> uninstall the app in Windows Settings &gt; Apps &gt; Installed apps. For the Microsoft Store version this also removes your settings, names and looks. For the direct-download version, you can also delete the folder <code>%LOCALAPPDATA%\Pati</code> or <code>%LOCALAPPDATA%\Hav</code>.</p>
+
+<h2>Children</h2>
+<p>The apps do not collect personal information from anyone, including children.</p>
+
+<h2>Your rights</h2>
+<p>We respect your rights under the GDPR and Türkiye's KVKK (Law No. 6698) to access, correct and delete your data. Because the apps send nothing to us, we hold no records about you; you can delete the data on your computer at any time as described above.</p>
+
+<h2>Changes</h2>
+<p>If this policy changes, the updated version will be published at this address and in the apps. If the apps ever start collecting data, this will be clearly announced in advance and your consent will be asked where required.</p>
+
+<h2>Contact</h2>
+<p>Developer and data controller: Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">Support</a></p>
+</section>
+
+<hr>
+
+<section id="es" lang="es">
+<h1>Política de privacidad</h1>
+<p class="date">Pati – The Break Cat y Hav – The Break Dog · Mac (App Store y descarga directa) y Windows (Microsoft Store y descarga directa) · Última actualización: 17 de octubre de 2026</p>
+<p>Pati y Hav son apps que te recuerdan tomar descansos. Funcionan íntegramente en tu ordenador. Esta política se aplica a todas las versiones de ambas apps.</p>
+
+<h2>No recopilamos nada</h2>
+<p>Las apps no tienen cuentas, inicio de sesión, analíticas, publicidad ni seguimiento. No envían ningún dato ni a nosotros ni a nadie más. Las versiones de App Store y Microsoft Store solo se conectan a internet para las compras opcionales dentro de la app, que se gestionan íntegramente a través de Apple o Microsoft (consulta Compras).</p>
+
+<h2>Lo que se queda en tu ordenador</h2>
+<p>Lo siguiente se guarda solo en tu ordenador, en los archivos propios de la app, y nunca sale de él. Nosotros no podemos verlo.</p>
+<ul>
+<li><strong>Ajustes:</strong> la duración del trabajo y del descanso, el gato o perro que elegiste, el estilo del láser o del juguete, el sonido, el idioma, el escritorio en vivo, las opciones del aviso previo y de “Esperar durante llamadas y presentaciones”, el tema (Windows), si desactivaste la música de las escenas, cuántos descansos completaste hoy y, de los últimos 30 días, recuentos diarios (descansos, cuántas veces tu mascota atrapó el láser o el juguete, segundos de caricias, veces que se puso panza arriba), además de tu número total de descansos. Son solo números, que se usan para el rastro de huellas, el resumen del día y los logros de descansos; los días con más de 30 días de antigüedad se eliminan automáticamente. En Mac se guardan en las preferencias propias de la app (UserDefaults); en Windows, en <code>settings.json</code>.</li>
+<li><strong>Nombres</strong> que les pones a tus gatos o perros, en <code>names.json</code>. Si borras un nombre, vuelve el nombre propio de la mascota y la entrada se elimina.</li>
+<li><strong>Aspecto</strong> que eliges para ellos (color del pelaje o del manto, dibujo, ojos, orejas, cola, manchas), en <code>appearance.json</code>, junto a los nombres. “Restaurar original” elimina la entrada de esa mascota.</li>
+<li><strong>Registro de errores (Windows):</strong> si la app se cierra de forma inesperada, los detalles técnicos del error pueden escribirse en esa misma carpeta. Se queda en tu ordenador.</li>
+</ul>
+
+<h2>Llamadas y presentaciones (protección de reuniones)</h2>
+<p>Cuando toca un descanso y “Esperar durante llamadas y presentaciones” está activado, la app solo comprueba <em>si</em> alguna app está usando en ese momento una cámara o un micrófono (la versión del Mac App Store solo comprueba el micrófono, porque el entorno aislado del App Store no permite comprobar la cámara) y si una presentación (Keynote o PowerPoint en Mac; el modo de presentación o de pantalla completa que indica Windows) ocupa una pantalla. Entonces espera y empieza el descanso unos 30 segundos después de que termine la llamada o la presentación. Nunca capta sonido ni vídeo, nunca lee títulos de ventanas ni nombres de reuniones, no pide permiso de cámara, micrófono ni grabación de pantalla y no guarda nada sobre ello. Puedes desactivarlo en los ajustes.</p>
+
+<h2>Aviso previo antes de un descanso</h2>
+<p>Unos 60 segundos antes de un descanso, aparece en el borde de la pantalla una pequeña ventana con tu mascota. Para elegir dónde aparece, la app solo comprueba en qué pantalla está el puntero en ese momento; esto no se guarda. Si el icono de la barra de menús (Mac) o de la bandeja del sistema (Windows) está oculto, aparece una pequeña cuenta atrás cerca de él; para decidirlo, la app solo comprueba si su propio icono está visible. Puedes desactivar el aviso previo en los ajustes.</p>
+
+<h2>Teclado, ratón y pantalla</h2>
+<p>Las apps nunca leen, registran, guardan ni envían lo que escribes, dónde haces clic ni lo que hay en tu pantalla. No hacen capturas de pantalla y no piden acceso de accesibilidad, grabación de pantalla, cámara, micrófono ni ubicación. Durante un descanso o el bloqueo de juego, las teclas que pulsas y los movimientos del ratón que haces en la pantalla propia de la app solo se usan para la reacción de tu mascota en ese momento y para permitirte salir de un descanso (Esc o Espacio, tres veces); nunca se escriben en ningún sitio.</p>
+
+<h2>Postales</h2>
+<p>Las apps pueden convertir un momento en una imagen de postal (la escena de tu mascota, su nombre, la fecha, el número de descansos de hoy y una nota breve, como cuántas veces atrapó tu mascota el láser o el juguete en ese descanso). Se dibuja en tu ordenador a partir de las ilustraciones propias de la app; no es una captura de pantalla. Solo va adonde tú la envíes con Compartir, Guardar o Copiar; las apps nunca la suben a ningún sitio. La copia temporal que se crea para compartirla se elimina con la siguiente postal, o cuando la app se cierra o se vuelve a abrir.</p>
+
+<h2>Atajos, Siri y Spotlight (Mac) · Lista de accesos directos (Windows)</h2>
+<p>En Mac, las apps ofrecen algunas acciones en la app Atajos, en Siri y en Spotlight: descansar ahora, pausar, reanudar, bloquear con Pati o Hav, tiempo hasta el próximo descanso y número de descansos de hoy. En Windows, al hacer clic con el botón derecho en la app en la barra de tareas o en Inicio, se ofrece descansar ahora, pausar 30 minutos y bloquear con Pati o Hav. Estas acciones hacen exactamente lo mismo que los botones de la ventana de la app y solo se ejecutan cuando tú las inicias (o en una automatización que configures tú). No guardan nada nuevo ni envían nada. Si usas Siri, Apple gestiona tu petición de voz; la app solo recibe la acción que debe ejecutar.</p>
+
+<h2>Bloqueo de juego (“Bloquear con Pati” / “Bloquear con Hav”)</h2>
+<p>El bloqueo de juego opcional cubre la pantalla con tu mascota hasta que lo desbloquees. No es un bloqueo real del sistema: tu sesión sigue iniciada. Mientras está activo, cambiar de app queda bloqueado temporalmente (Mac: ⌘Tab, el Dock, la barra de menús y Forzar salida, mediante opciones estándar de macOS; Windows: la tecla Windows, Alt+Tab y Alt+F4, mediante un hook de teclado temporal que solo mira esas teclas, no registra nada y se quita cuando termina el bloqueo).</p>
+<p>Para desbloquear en <strong>macOS</strong>, tocas el símbolo de Touch ID que se muestra dentro de la escena del bloqueo de juego; es el propio macOS el que comprueba tu huella (LocalAuthentication), y “Desbloquear con contraseña” abre la ventana de contraseña del propio macOS. En <strong>Windows</strong>, Windows te pide el PIN, la huella, la cara o la contraseña a través de Windows Hello o de su propia pantalla de inicio de sesión. La app nunca los ve; solo sabe si el desbloqueo se realizó correctamente.</p>
+
+<h2>Escritorio en vivo</h2>
+<p>Cuando “Pati en vivo en el escritorio” o “Hav en vivo en el escritorio” está activado, la app dibuja a tu mascota en su propia ventana detrás de los iconos del escritorio. No lee, copia ni cambia tu imagen de fondo de pantalla, y los clics pasan al escritorio. Cuando lo desactivas, vuelve a mostrarse tu propio fondo de pantalla.</p>
+
+<h2>Música y sonidos de las escenas</h2>
+<p>La suave música de fondo de las escenas de descanso y de bloqueo de juego, y los sonidos de las mascotas, proceden de archivos incluidos en la app y se reproducen localmente. No se transmite ni se descarga nada. El icono del altavoz de la esquina superior derecha de la escena desactiva o activa la música; esa elección se guarda con tus ajustes.</p>
+
+<h2>Idioma, región y fecha</h2>
+<p>Para mostrar a los invitados de días festivos (gatos y perros de días especiales) en los días y países adecuados, las apps leen la fecha, el idioma y la región configurados en tu ordenador. Esta información solo se usa en tu ordenador y no se guarda.</p>
+
+<h2>Ajustes del sistema</h2>
+<p><strong>Abrir al iniciar sesión:</strong> cuando está activado, macOS o Windows abre la app al iniciar sesión, solo para tu cuenta de usuario. En Mac está desactivado hasta que tú lo eliges (por ejemplo, en la primera pantalla de bienvenida); en Windows está activado tras la instalación. Puedes desactivarlo en los ajustes de la app, en Ajustes del Sistema de macOS &gt; General &gt; Ítems de inicio, o en Configuración de Windows &gt; Aplicaciones &gt; Inicio. Las apps no cambian ningún otro ajuste del sistema.</p>
+<p><strong>El botón ⓘ (solo versiones de descarga directa):</strong> lee los ajustes de reposo de la pantalla y de contraseña tras el reposo de tu ordenador con las herramientas propias del sistema (Mac: herramientas de macOS; Windows: powercfg) y solo te los muestra. No se guarda nada. Las versiones de App Store y Microsoft Store no ejecutan estas herramientas.</p>
+
+<h2>Compras (versiones de App Store y Microsoft Store)</h2>
+<p>Las versiones de App Store y Microsoft Store ofrecen packs opcionales de gatos y perros adicionales como compras únicas dentro de la app; tres mascotas y los invitados de días especiales son siempre gratis. Las compras se realizan íntegramente a través de Apple o Microsoft con tu propia cuenta; tus datos de pago nunca llegan a la app ni a nosotros. La app solo obtiene de la tienda los precios de los packs y qué packs tienes, y guarda esa lista en tu ordenador para que las mascotas correctas estén disponibles sin conexión. Restaurar las compras vuelve a consultar a la tienda. A la compra y al pago se aplica la política de privacidad de Apple o de Microsoft. Las versiones de descarga directa no incluyen compras.</p>
+
+<h2>Comentarios</h2>
+<p>“Enviar comentarios” abre tu propia app de correo con un mensaje dirigido a <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a>. El mensaje incluye la versión de la app, tu versión de macOS o Windows y el idioma de la app. No se envía nada a menos que pulses Enviar. Los correos que nos envías solo se usan para responderte y para mejorar las apps.</p>
+
+<h2>Cómo eliminar tus datos</h2>
+<p><strong>Mac:</strong> cierra la app y muévela de la carpeta Aplicaciones a la Papelera. Para eliminar también tus ajustes, recuentos de descansos, nombres y aspectos, ejecuta esto en Terminal (la app también muestra el comando exacto para tu copia en Ajustes &gt; “Privacidad y uso de datos…”):</p>
+<p>Pati: <code>defaults delete com.canakarsu.pati; rm -f ~/Library/Application\ Support/com.canakarsu.pati/names.json ~/Library/Application\ Support/com.canakarsu.pati/appearance.json</code></p>
+<p>Hav: <code>defaults delete com.canakarsu.hav; rm -f ~/Library/Application\ Support/com.canakarsu.hav/names.json ~/Library/Application\ Support/com.canakarsu.hav/appearance.json</code></p>
+<p>La versión de App Store guarda todo esto dentro del contenedor propio de la app. Tras eliminar la app, al borrar esa carpeta se elimina todo: <code>rm -rf ~/Library/Containers/com.canakarsu.pati</code> (Hav: <code>rm -rf ~/Library/Containers/com.canakarsu.hav</code>).</p>
+<p><strong>Windows:</strong> desinstala la app en Configuración de Windows &gt; Aplicaciones &gt; Aplicaciones instaladas. En la versión de Microsoft Store, esto también elimina tus ajustes, nombres y aspectos. En la versión de descarga directa, también puedes eliminar la carpeta <code>%LOCALAPPDATA%\Pati</code> o <code>%LOCALAPPDATA%\Hav</code>.</p>
+
+<h2>Menores</h2>
+<p>Las apps no recopilan información personal de nadie, tampoco de menores.</p>
+
+<h2>Tus derechos</h2>
+<p>Respetamos los derechos que te otorgan el RGPD y la KVKK de Turquía (Ley n.º 6698) a acceder a tus datos, rectificarlos y suprimirlos. Como las apps no nos envían nada, no conservamos ningún registro sobre ti; puedes eliminar los datos de tu ordenador en cualquier momento como se describe más arriba.</p>
+
+<h2>Cambios</h2>
+<p>Si esta política cambia, la versión actualizada se publicará en esta dirección y en las apps. Si algún día las apps empiezan a recopilar datos, se anunciará claramente con antelación y se pedirá tu consentimiento cuando sea necesario.</p>
+
+<h2>Contacto</h2>
+<p>Desarrollador y responsable del tratamiento: Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">Soporte</a></p>
+</section>
+
+<hr>
+
+<section id="fr" lang="fr">
+<h1>Politique de confidentialité</h1>
+<p class="date">Pati – The Break Cat et Hav – The Break Dog · Mac (App Store et téléchargement direct) et Windows (Microsoft Store et téléchargement direct) · Dernière mise à jour : 17 octobre 2026</p>
+<p>Pati et Hav sont des apps de rappel de pause. Elles fonctionnent entièrement sur ton ordinateur. Cette politique couvre toutes les versions des deux apps.</p>
+
+<h2>Nous ne collectons rien</h2>
+<p>Les apps n’ont ni compte, ni connexion, ni outil d’analyse, ni publicité, ni pistage. Elles n’envoient aucune donnée, ni à nous ni à qui que ce soit. Les versions App Store et Microsoft Store ne se connectent à Internet que pour les achats intégrés facultatifs, qui passent entièrement par Apple ou Microsoft (voir Achats).</p>
+
+<h2>Ce qui reste sur ton ordinateur</h2>
+<p>Les éléments suivants sont stockés uniquement sur ton ordinateur, dans les fichiers propres à l’app, et ne le quittent jamais. Nous ne pouvons pas les voir.</p>
+<ul>
+<li><strong>Réglages :</strong> durées de travail et de pause, le chat ou le chien que tu as choisi, le style du laser ou du jouet, le son, la langue, le bureau animé, les options d’avertissement et « Attendre pendant les appels et présentations », le thème (Windows), le fait que tu as coupé ou non la musique de la scène, le nombre de pauses terminées aujourd’hui et, pour les 30 derniers jours, des compteurs par jour (pauses, nombre de fois où ton animal a attrapé le laser ou le jouet, secondes de caresses, roulades sur le dos) ainsi que ton nombre total de pauses. Ce ne sont que des nombres, utilisés pour la piste de pattes, le résumé du jour et les étapes de pauses ; les jours de plus de 30 jours sont supprimés automatiquement. Sur Mac, ils sont conservés dans les préférences propres à l’app (UserDefaults) ; sur Windows, dans <code>settings.json</code>.</li>
+<li><strong>Noms</strong> que tu donnes à tes chats ou à tes chiens, dans <code>names.json</code>. Si tu effaces un nom, l’animal retrouve son propre nom et l’entrée est supprimée.</li>
+<li><strong>Apparences</strong> que tu choisis pour eux (couleur du pelage, motif, yeux, oreilles, queue, taches), dans <code>appearance.json</code>, à côté des noms. « Rétablir l’original » supprime l’entrée de cet animal.</li>
+<li><strong>Journal de plantage (Windows) :</strong> si l’app se ferme de manière inattendue, les détails techniques de l’erreur peuvent être écrits dans ce même dossier. Ils restent sur ton ordinateur.</li>
+</ul>
+
+<h2>Appels et présentations (protection des réunions)</h2>
+<p>Quand une pause arrive et que « Attendre pendant les appels et présentations » est activé, l’app vérifie seulement <em>si</em> une app utilise en ce moment une caméra ou un micro (la version Mac App Store vérifie uniquement le micro, car le bac à sable de l’App Store ne permet pas de vérifier la caméra), et si une présentation (Keynote ou PowerPoint sur Mac ; mode présentation ou plein écran signalé par Windows) occupe tout un écran. Elle attend alors et lance la pause environ 30 secondes après la fin de l’appel ou de la présentation. Elle ne capte jamais de son ni d’image, ne lit jamais les titres des fenêtres ni le nom des réunions, ne demande aucune autorisation d’accès à la caméra, au micro ou à l’enregistrement de l’écran, et n’en enregistre rien. Tu peux désactiver cette option dans les réglages.</p>
+
+<h2>Avertissement avant une pause</h2>
+<p>Environ 60 secondes avant une pause, une petite fenêtre avec ton animal apparaît au bord de l’écran. Pour choisir où elle apparaît, l’app vérifie seulement sur quel écran se trouve le pointeur à ce moment-là ; cette information n’est pas enregistrée. Si l’icône de la barre des menus (Mac) ou de la zone de notification (Windows) est masquée, un petit compte à rebours apparaît à proximité ; pour le décider, l’app vérifie seulement si sa propre icône est visible. Tu peux désactiver l’avertissement dans les réglages.</p>
+
+<h2>Clavier, souris et écran</h2>
+<p>Les apps ne lisent, n’enregistrent, ne stockent ni n’envoient jamais ce que tu tapes, ce sur quoi tu cliques ou ce qui est affiché à ton écran. Elles ne font aucune capture d’écran et ne demandent aucun accès à l’accessibilité, à l’enregistrement de l’écran, à la caméra, au micro ou à la localisation. Pendant une pause ou le verrou de jeu, les touches sur lesquelles tu appuies et les mouvements de souris que tu fais sur l’écran propre à l’app servent uniquement à la réaction de ton animal sur le moment et à te permettre de quitter une pause (Échap ou Espace, trois fois) ; ils ne sont jamais écrits nulle part.</p>
+
+<h2>Cartes postales</h2>
+<p>Les apps peuvent transformer un moment en image de carte postale (la scène de ton animal, son nom, la date, le nombre de pauses du jour et une courte note, par exemple combien de fois ton animal a attrapé le laser ou le jouet pendant cette pause). Elle est dessinée sur ton ordinateur à partir des illustrations propres à l’app ; ce n’est pas une capture d’écran. Elle va uniquement là où tu l’envoies avec Partager, Enregistrer ou Copier ; les apps ne la téléversent jamais nulle part. La copie temporaire créée pour le partage est supprimée à la carte postale suivante, ou quand l’app se ferme ou se rouvre.</p>
+
+<h2>Raccourcis, Siri et Spotlight (Mac) · Liste de raccourcis (Windows)</h2>
+<p>Sur Mac, les apps proposent quelques actions dans l’app Raccourcis, dans Siri et dans Spotlight : faire une pause maintenant, suspendre, reprendre, verrouiller avec Pati ou Hav, temps avant la prochaine pause et nombre de pauses du jour. Sur Windows, un clic droit sur l’app dans la barre des tâches ou dans le menu Démarrer propose de faire une pause maintenant, de suspendre pendant 30 minutes et de verrouiller avec Pati ou Hav. Ces actions font exactement ce que font les boutons de la fenêtre de l’app et ne s’exécutent que lorsque tu les lances (ou dans une automatisation que tu as configurée toi-même). Elles n’enregistrent rien de nouveau et n’envoient rien. Si tu utilises Siri, c’est Apple qui traite ta demande vocale ; l’app reçoit seulement l’action à exécuter.</p>
+
+<h2>Verrou de jeu (« Verrouiller avec Pati » / « Verrouiller avec Hav »)</h2>
+<p>Le verrou de jeu facultatif recouvre l’écran avec ton animal jusqu’à ce que tu le déverrouilles. Ce n’est pas un vrai verrouillage du système : ta session reste ouverte. Tant qu’il est actif, le passage d’une app à l’autre est temporairement bloqué (Mac : ⌘Tab, Dock, barre des menus et Forcer à quitter, via les options standard de macOS ; Windows : la touche Windows, Alt+Tab et Alt+F4, via un hook clavier temporaire qui ne surveille que ces touches, n’enregistre rien et est supprimé à la fin du verrou).</p>
+<p>Pour déverrouiller sur <strong>macOS</strong>, tu touches le symbole Touch ID affiché dans la scène du verrou de jeu ; c’est macOS lui-même qui vérifie ton empreinte (LocalAuthentication), et « Déverrouiller avec le mot de passe » ouvre la fenêtre de mot de passe propre à macOS. Sur <strong>Windows</strong>, Windows te demande ton code PIN, ton empreinte, ton visage ou ton mot de passe via Windows Hello ou son propre écran de connexion. L’app ne les voit jamais ; elle sait seulement si le déverrouillage a réussi.</p>
+
+<h2>Bureau animé</h2>
+<p>Quand « Pati animé sur le bureau » (ou « Hav animé sur le bureau ») est activé, l’app dessine ton animal dans sa propre fenêtre, derrière les icônes du bureau. Elle ne lit, ne copie ni ne modifie ton image de fond d’écran, et les clics passent jusqu’au bureau. Quand tu le désactives, ton propre fond d’écran s’affiche de nouveau.</p>
+
+<h2>Musique et sons des scènes</h2>
+<p>La douce musique de fond des scènes de pause et de verrou de jeu ainsi que les sons des animaux proviennent de fichiers inclus dans l’app et sont lus localement. Rien n’est diffusé en streaming ni téléchargé. L’icône de haut-parleur dans le coin supérieur droit de la scène coupe ou remet la musique ; ce choix est enregistré avec tes réglages.</p>
+
+<h2>Langue, région et date</h2>
+<p>Pour afficher les invités des jours de fête (chats et chiens des jours spéciaux) aux bons jours et dans les bons pays, les apps lisent la date, la langue et la région définies sur ton ordinateur. Ces informations sont utilisées uniquement sur ton ordinateur et ne sont pas enregistrées.</p>
+
+<h2>Réglages du système</h2>
+<p><strong>Ouvrir à la connexion :</strong> lorsque cette option est activée, macOS ou Windows lance l’app quand tu ouvres ta session, uniquement pour ton compte utilisateur. Sur Mac, elle est désactivée jusqu’à ce que tu la choisisses (par exemple dans le premier écran de bienvenue) ; sur Windows, elle est activée après l’installation. Tu peux la désactiver dans les réglages de l’app, dans Réglages Système de macOS &gt; Général &gt; Ouverture, ou dans Paramètres Windows &gt; Applications &gt; Démarrage. Les apps ne modifient aucun autre réglage du système.</p>
+<p><strong>Le bouton ⓘ (versions en téléchargement direct uniquement) :</strong> il lit les réglages de mise en veille de l’écran et de demande du mot de passe après la veille de ton ordinateur avec les outils propres au système (Mac : outils de macOS ; Windows : powercfg) et se contente de te les afficher. Rien n’est enregistré. Les versions App Store et Microsoft Store n’exécutent pas ces outils.</p>
+
+<h2>Achats (versions App Store et Microsoft Store)</h2>
+<p>Les versions App Store et Microsoft Store proposent des packs facultatifs de chats et de chiens supplémentaires sous forme d’achats intégrés uniques ; trois animaux et les invités des jours spéciaux sont toujours gratuits. Les achats se font entièrement via Apple ou Microsoft avec ton propre compte ; tes informations de paiement n’arrivent jamais jusqu’à l’app ni jusqu’à nous. L’app apprend de la boutique uniquement le prix des packs et les packs que tu possèdes, et conserve cette liste sur ton ordinateur pour que les bons animaux soient disponibles hors ligne. Restaurer les achats interroge de nouveau la boutique. La politique de confidentialité d’Apple ou de Microsoft s’applique à l’achat et au paiement. Les versions en téléchargement direct ne contiennent aucun achat.</p>
+
+<h2>Avis</h2>
+<p>« Envoyer un avis » ouvre ta propre app de messagerie avec un message adressé à <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a>. Le message contient la version de l’app, ta version de macOS ou de Windows et la langue de l’app. Rien n’est envoyé tant que tu n’appuies pas sur Envoyer. Les e-mails que tu nous envoies servent uniquement à te répondre et à améliorer les apps.</p>
+
+<h2>Comment supprimer tes données</h2>
+<p><strong>Mac :</strong> quitte l’app et déplace-la du dossier Applications vers la Corbeille. Pour supprimer aussi tes réglages, tes compteurs de pauses, les noms et les apparences, exécute ceci dans Terminal (l’app affiche aussi la commande exacte pour ta copie dans Réglages &gt; « Confidentialité et utilisation des données… ») :</p>
+<p>Pati : <code>defaults delete com.canakarsu.pati; rm -f ~/Library/Application\ Support/com.canakarsu.pati/names.json ~/Library/Application\ Support/com.canakarsu.pati/appearance.json</code></p>
+<p>Hav : <code>defaults delete com.canakarsu.hav; rm -f ~/Library/Application\ Support/com.canakarsu.hav/names.json ~/Library/Application\ Support/com.canakarsu.hav/appearance.json</code></p>
+<p>La version App Store conserve tout cela dans le conteneur propre à l’app. Après avoir supprimé l’app, supprimer ce dossier efface tout : <code>rm -rf ~/Library/Containers/com.canakarsu.pati</code> (Hav : <code>rm -rf ~/Library/Containers/com.canakarsu.hav</code>).</p>
+<p><strong>Windows :</strong> désinstalle l’app dans Paramètres Windows &gt; Applications &gt; Applications installées. Pour la version Microsoft Store, cela supprime aussi tes réglages, les noms et les apparences. Pour la version en téléchargement direct, tu peux aussi supprimer le dossier <code>%LOCALAPPDATA%\Pati</code> ou <code>%LOCALAPPDATA%\Hav</code>.</p>
+
+<h2>Enfants</h2>
+<p>Les apps ne collectent d’informations personnelles auprès de personne, y compris des enfants.</p>
+
+<h2>Tes droits</h2>
+<p>Nous respectons les droits que te confèrent le RGPD et la KVKK turque (loi n° 6698) d’accéder à tes données, de les rectifier et de les supprimer. Comme les apps ne nous envoient rien, nous ne détenons aucun enregistrement te concernant ; tu peux supprimer à tout moment les données présentes sur ton ordinateur comme décrit ci-dessus.</p>
+
+<h2>Modifications</h2>
+<p>Si cette politique change, la version mise à jour sera publiée à cette adresse et dans les apps. Si les apps commencent un jour à collecter des données, cela sera clairement annoncé à l’avance et ton consentement sera demandé lorsque cela est requis.</p>
+
+<h2>Contact</h2>
+<p>Développeur et responsable du traitement : Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">Assistance</a></p>
+</section>
+
+<hr>
+
+<section id="it" lang="it">
+<h1>Informativa sulla privacy</h1>
+<p class="date">Pati – The Break Cat e Hav – The Break Dog · Mac (App Store e download diretto) e Windows (Microsoft Store e download diretto) · Ultimo aggiornamento: 17 ottobre 2026</p>
+<p>Pati e Hav sono app che ti ricordano di fare una pausa. Funzionano interamente sul tuo computer. Questa informativa riguarda tutte le versioni di entrambe le app.</p>
+
+<h2>Non raccogliamo nulla</h2>
+<p>Le app non hanno account, accesso, analisi statistiche, pubblicità né tracciamento. Non inviano alcun dato a noi né a nessun altro. Le versioni App Store e Microsoft Store si collegano a Internet solo per gli acquisti in-app facoltativi, che passano interamente attraverso Apple o Microsoft (vedi Acquisti).</p>
+
+<h2>Cosa resta sul tuo computer</h2>
+<p>Le informazioni seguenti sono salvate solo sul tuo computer, nei file dell'app stessa, e non lo lasciano mai. Noi non possiamo vederle.</p>
+<ul>
+<li><strong>Impostazioni:</strong> durata del lavoro e della pausa, il gatto o il cane che hai scelto, stile del laser o del giocattolo, suono, lingua, scrivania animata, le opzioni dell'avviso anticipato e di “Attendi durante chiamate e presentazioni”, tema (Windows), se hai disattivato la musica delle scene, quante pause hai completato oggi e, per gli ultimi 30 giorni, i conteggi giornalieri (pause, quante volte il tuo animale ha preso il laser o il giocattolo, secondi di coccole, rotolate a pancia all'aria) oltre al numero totale delle tue pause. Sono solo numeri, usati per la scia di zampette, il riepilogo di fine giornata e i traguardi delle pause; i giorni più vecchi di 30 giorni vengono eliminati automaticamente. Su Mac sono conservati nelle preferenze dell'app (UserDefaults); su Windows in <code>settings.json</code>.</li>
+<li><strong>Nomi</strong> che dai ai tuoi gatti o cani, in <code>names.json</code>. Se cancelli un nome, torna il nome originale dell'animale e la voce viene rimossa.</li>
+<li><strong>Aspetto</strong> che scegli per loro (colore del pelo o del mantello, motivo, occhi, orecchie, coda, macchie), in <code>appearance.json</code> accanto ai nomi. “Ripristina originale” rimuove la voce di quell'animale.</li>
+<li><strong>Registro degli arresti anomali (Windows):</strong> se l'app si chiude in modo imprevisto, i dettagli tecnici dell'errore possono essere scritti nella stessa cartella. Restano sul tuo computer.</li>
+</ul>
+
+<h2>Chiamate e presentazioni (protezione riunioni)</h2>
+<p>Quando è ora di una pausa e “Attendi durante chiamate e presentazioni” è attivo, l'app controlla solo <em>se</em> un'app sta usando in quel momento una fotocamera o un microfono (la versione Mac App Store controlla solo il microfono, perché la sandbox dell'App Store non consente di controllare la fotocamera) e se una presentazione (Keynote o PowerPoint su Mac; modalità presentazione o a schermo intero segnalata da Windows) occupa uno schermo. Quindi attende e avvia la pausa circa 30 secondi dopo la fine della chiamata o della presentazione. Non acquisisce mai audio o video, non legge mai i titoli delle finestre né i nomi delle riunioni, non chiede alcuna autorizzazione per fotocamera, microfono o registrazione dello schermo e non salva nulla al riguardo. Puoi disattivarlo nelle impostazioni.</p>
+
+<h2>Avviso prima di una pausa</h2>
+<p>Circa 60 secondi prima di una pausa, una piccola finestra con il tuo animale compare sul bordo dello schermo. Per scegliere dove mostrarla, l'app controlla solo su quale schermo si trova il puntatore in quel momento; questa informazione non viene salvata. Se l'icona nella barra dei menu (Mac) o nell'area di notifica (Windows) è nascosta, accanto compare un piccolo conto alla rovescia; per deciderlo l'app controlla solo se la propria icona è visibile. Puoi disattivare l'avviso nelle impostazioni.</p>
+
+<h2>Tastiera, mouse e schermo</h2>
+<p>Le app non leggono, registrano, salvano né inviano mai ciò che digiti, ciò su cui fai clic o ciò che c'è sul tuo schermo. Non acquisiscono istantanee dello schermo e non chiedono accesso ad Accessibilità, registrazione dello schermo, fotocamera, microfono o posizione. Durante una pausa o il blocco gioco, i tasti che premi e i movimenti del mouse che fai sulla schermata dell'app vengono usati solo per la reazione del tuo animale in quel momento e per permetterti di uscire da una pausa (Esc o Spazio, tre volte); non vengono mai scritti da nessuna parte.</p>
+
+<h2>Cartoline</h2>
+<p>Le app possono trasformare un momento in un'immagine cartolina (la scena del tuo animale, il suo nome, la data, il numero di pause di oggi e una breve nota, ad esempio quante volte il tuo animale ha preso il laser o il giocattolo in quella pausa). Viene disegnata sul tuo computer a partire dalle illustrazioni dell'app; non è un'istantanea dello schermo. Va solo dove la mandi tu con Condividi, Salva o Copia; le app non la caricano mai da nessuna parte. La copia temporanea creata per la condivisione viene eliminata con la cartolina successiva, oppure quando l'app si chiude o si riapre.</p>
+
+<h2>Comandi Rapidi, Siri e Spotlight (Mac) · Jump List (Windows)</h2>
+<p>Su Mac, le app offrono alcune azioni nell'app Comandi Rapidi, in Siri e in Spotlight: fare una pausa ora, sospendere, riprendere, bloccare con Pati o Hav, tempo alla prossima pausa e numero di pause di oggi. Su Windows, facendo clic con il pulsante destro sull'app nella barra delle applicazioni o in Start puoi scegliere di fare una pausa ora, sospendere per 30 minuti e bloccare con Pati o Hav. Queste azioni fanno esattamente ciò che fanno i pulsanti nella finestra dell'app e vengono eseguite solo quando le avvii tu (o in un'automazione che configuri tu stesso). Non salvano nulla di nuovo e non inviano nulla. Se usi Siri, la tua richiesta vocale viene gestita da Apple; l'app riceve solo l'azione da eseguire.</p>
+
+<h2>Blocco gioco (“Blocca con Pati” / “Blocca con Hav”)</h2>
+<p>Il blocco gioco facoltativo copre lo schermo con il tuo animale finché non lo sblocchi. Non è un vero blocco di sistema: la tua sessione resta aperta. Mentre è attivo, il passaggio tra le app è temporaneamente bloccato (Mac: ⌘Tab, Dock, barra dei menu e Uscita forzata tramite le opzioni standard di macOS; Windows: il tasto Windows, Alt+Tab e Alt+F4 tramite un hook temporaneo della tastiera che osserva solo quei tasti, non registra nulla e viene rimosso al termine del blocco).</p>
+<p>Per sbloccare su <strong>macOS</strong>, tocchi il simbolo di Touch ID mostrato nella scena del blocco gioco; è macOS stesso a verificare la tua impronta digitale (LocalAuthentication), e “Sblocca con la password” apre la finestra della password di macOS. Su <strong>Windows</strong>, Windows ti chiede PIN, impronta digitale, volto o password tramite Windows Hello o la propria schermata di accesso. L'app non li vede mai; sa solo se lo sblocco è riuscito.</p>
+
+<h2>Scrivania animata</h2>
+<p>Quando la scrivania animata (“Pati animato sulla scrivania” / “Hav animato sulla scrivania”) è attiva, l'app disegna il tuo animale in una propria finestra dietro le icone della scrivania. Non legge, non copia e non modifica l'immagine del tuo sfondo, e i clic passano alla scrivania. Quando la disattivi, viene mostrato di nuovo il tuo sfondo.</p>
+
+<h2>Musica e suoni delle scene</h2>
+<p>La musica di sottofondo tranquilla nelle scene della pausa e del blocco gioco e i versi degli animali provengono da file contenuti nell'app e vengono riprodotti in locale. Nulla viene trasmesso in streaming o scaricato. L'icona dell'altoparlante nell'angolo in alto a destra della scena disattiva o attiva la musica; questa scelta viene salvata con le tue impostazioni.</p>
+
+<h2>Lingua, area geografica e data</h2>
+<p>Per mostrare gli ospiti delle festività (gatti e cani dei giorni speciali) nei giorni giusti e nei paesi giusti, le app leggono la data, la lingua e l'area geografica impostate sul tuo computer. Queste informazioni vengono usate solo sul tuo computer e non vengono salvate.</p>
+
+<h2>Impostazioni di sistema</h2>
+<p><strong>Apri al login:</strong> quando è attivo, macOS o Windows avvia l'app quando accedi, solo per il tuo account utente. Su Mac è disattivato finché non lo scegli tu (ad esempio nella prima schermata di benvenuto); su Windows è attivo dopo l'installazione. Puoi disattivarlo nelle impostazioni dell'app, in Impostazioni di Sistema di macOS &gt; Generali &gt; Elementi login oppure in Impostazioni di Windows &gt; App &gt; Avvio. Le app non modificano nessun'altra impostazione di sistema.</p>
+<p><strong>Il pulsante ⓘ (solo versioni a download diretto):</strong> legge le impostazioni del computer relative allo stop del monitor e alla richiesta della password dopo lo stop con gli strumenti del sistema stesso (Mac: strumenti di macOS; Windows: powercfg) e si limita a mostrartele. Non viene salvato nulla. Le versioni App Store e Microsoft Store non eseguono questi strumenti.</p>
+
+<h2>Acquisti (versioni App Store e Microsoft Store)</h2>
+<p>Le versioni App Store e Microsoft Store offrono pacchetti facoltativi di gatti e cani aggiuntivi come acquisti in-app una tantum; tre animali e gli ospiti dei giorni speciali sono sempre gratuiti. Gli acquisti avvengono interamente tramite Apple o Microsoft con il tuo account; i tuoi dati di pagamento non arrivano mai all'app né a noi. Dallo store l'app riceve solo i prezzi dei pacchetti e quali pacchetti possiedi, e conserva questo elenco sul tuo computer affinché gli animali giusti siano disponibili anche offline. Ripristinando gli acquisti, l'app interroga di nuovo lo store. All'acquisto e al pagamento si applica l'informativa sulla privacy di Apple o di Microsoft. Le versioni a download diretto non contengono acquisti.</p>
+
+<h2>Feedback</h2>
+<p>“Invia feedback” apre la tua app di posta con un messaggio indirizzato a <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a>. Il messaggio contiene la versione dell'app, la tua versione di macOS o Windows e la lingua dell'app. Non viene inviato nulla finché non premi Invia. Le email che ci invii vengono usate solo per risponderti e per migliorare le app.</p>
+
+<h2>Come eliminare i tuoi dati</h2>
+<p><strong>Mac:</strong> chiudi l'app e spostala dalla cartella Applicazioni al Cestino. Per rimuovere anche impostazioni, conteggi delle pause, nomi e aspetto, esegui questo comando in Terminale (l'app mostra anche il comando esatto per la tua copia in Impostazioni &gt; “Privacy e uso dei dati…”):</p>
+<p>Pati: <code>defaults delete com.canakarsu.pati; rm -f ~/Library/Application\ Support/com.canakarsu.pati/names.json ~/Library/Application\ Support/com.canakarsu.pati/appearance.json</code></p>
+<p>Hav: <code>defaults delete com.canakarsu.hav; rm -f ~/Library/Application\ Support/com.canakarsu.hav/names.json ~/Library/Application\ Support/com.canakarsu.hav/appearance.json</code></p>
+<p>La versione App Store conserva tutto questo nel contenitore dell'app. Dopo aver rimosso l'app, eliminando quella cartella si rimuove tutto: <code>rm -rf ~/Library/Containers/com.canakarsu.pati</code> (Hav: <code>rm -rf ~/Library/Containers/com.canakarsu.hav</code>).</p>
+<p><strong>Windows:</strong> disinstalla l'app in Impostazioni di Windows &gt; App &gt; App installate. Per la versione Microsoft Store questo rimuove anche impostazioni, nomi e aspetto. Per la versione a download diretto, puoi anche eliminare la cartella <code>%LOCALAPPDATA%\Pati</code> o <code>%LOCALAPPDATA%\Hav</code>.</p>
+
+<h2>Minori</h2>
+<p>Le app non raccolgono informazioni personali da nessuno, compresi i minori.</p>
+
+<h2>I tuoi diritti</h2>
+<p>Rispettiamo i tuoi diritti di accesso, rettifica e cancellazione dei tuoi dati previsti dal GDPR (RGPD) e dalla KVKK della Turchia (Legge n. 6698). Poiché le app non ci inviano nulla, non conserviamo alcun dato su di te; puoi eliminare in qualsiasi momento i dati presenti sul tuo computer come descritto sopra.</p>
+
+<h2>Modifiche</h2>
+<p>Se questa informativa cambia, la versione aggiornata sarà pubblicata a questo indirizzo e nelle app. Se un giorno le app dovessero iniziare a raccogliere dati, ciò sarà annunciato chiaramente in anticipo e, ove richiesto, ti sarà chiesto il consenso.</p>
+
+<h2>Contatti</h2>
+<p>Sviluppatore e titolare del trattamento: Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">Assistenza</a></p>
+</section>
+
+<hr>
+
+<section id="pt-BR" lang="pt-BR">
+<h1>Política de Privacidade</h1>
+<p class="date">Pati – The Break Cat e Hav – The Break Dog · Mac (App Store e download direto) e Windows (Microsoft Store e download direto) · Última atualização: 17 de outubro de 2026</p>
+<p>Pati e Hav são apps que lembram você de fazer pausas. Eles funcionam inteiramente no seu computador. Esta política abrange todas as versões dos dois apps.</p>
+
+<h2>Não coletamos nada</h2>
+<p>Os apps não têm contas, login, análises, publicidade nem rastreamento. Eles não enviam nenhum dado para nós nem para ninguém. As versões da App Store e da Microsoft Store só se conectam à internet para compras opcionais dentro do app, que são feitas inteiramente pela Apple ou pela Microsoft (veja Compras).</p>
+
+<h2>O que fica no seu computador</h2>
+<p>Os itens abaixo ficam salvos apenas no seu computador, nos arquivos do próprio app, e nunca saem dele. Nós não temos como vê-los.</p>
+<ul>
+<li><strong>Ajustes:</strong> tempos de trabalho e de pausa, o gato ou cachorro que você escolheu, o estilo do laser ou do brinquedo, som, idioma, Mesa animada, as opções de aviso antes da pausa e “Esperar durante chamadas e apresentações”, tema (Windows), se você desativou a música da cena, quantas pausas você concluiu hoje e, para os últimos 30 dias, as contagens por dia (pausas, quantas vezes seu bichinho pegou o laser ou o brinquedo, segundos de carinho, vezes que mostrou a barriguinha), além do seu número total de pausas. São só números, usados para o rastro de patinhas, o resumo do dia e as comemorações de pausas; os dados de dias anteriores aos últimos 30 são apagados automaticamente. No Mac, eles ficam nas preferências do próprio app (UserDefaults); no Windows, em <code>settings.json</code>.</li>
+<li><strong>Nomes</strong> que você dá aos seus gatos ou cachorros, em <code>names.json</code>. Se você apagar um nome, o bichinho volta a ter o nome original e o registro é removido.</li>
+<li><strong>Aparências</strong> que você escolhe para eles (cor do pelo, padrão, olhos, orelhas, cauda, manchas), em <code>appearance.json</code>, junto com os nomes. “Restaurar original” remove o registro daquele bichinho.</li>
+<li><strong>Registro de falhas (Windows):</strong> se o app fechar de forma inesperada, os detalhes técnicos do erro podem ser gravados na mesma pasta. Eles ficam no seu computador.</li>
+</ul>
+
+<h2>Chamadas e apresentações (escudo de reuniões)</h2>
+<p>Quando chega a hora de uma pausa e “Esperar durante chamadas e apresentações” está ativado, o app verifica apenas <em>se</em> algum app está usando uma câmera ou um microfone naquele momento (a versão da Mac App Store verifica só o microfone, porque a sandbox da App Store não permite verificar a câmera) e se uma apresentação (Keynote ou PowerPoint no Mac; modo de apresentação ou de tela cheia informado pelo Windows) ocupa uma tela. Então ele espera e começa a pausa cerca de 30 segundos depois que a chamada ou a apresentação termina. Ele nunca capta som nem vídeo, nunca lê títulos de janelas nem nomes de reuniões, não pede permissão de câmera, microfone ou gravação de tela e não salva nada sobre isso. Você pode desativar isso nos ajustes.</p>
+
+<h2>Aviso antes da pausa</h2>
+<p>Cerca de 60 segundos antes de uma pausa, uma pequena janela com seu bichinho aparece na borda da tela. Para escolher onde ela aparece, o app só verifica em qual tela o ponteiro está naquele momento; isso não é salvo. Se o ícone da barra de menus (Mac) ou da bandeja do sistema (Windows) estiver oculto, uma pequena contagem regressiva aparece perto dele; para decidir isso, o app só verifica se o próprio ícone está visível. Você pode desativar o aviso nos ajustes.</p>
+
+<h2>Teclado, mouse e tela</h2>
+<p>Os apps nunca leem, gravam, salvam ou enviam o que você digita, onde você clica ou o que aparece na sua tela. Eles não fazem capturas de tela e não pedem acesso a Acessibilidade, Gravação de Tela, câmera, microfone ou localização. Durante uma pausa ou o bloqueio de brincadeira, as teclas que você pressiona e os movimentos do mouse na tela do próprio app são usados apenas para a reação do seu bichinho naquele momento e para você poder sair de uma pausa (Esc ou Espaço, três vezes); eles nunca são gravados em lugar nenhum.</p>
+
+<h2>Cartões-postais</h2>
+<p>Os apps podem transformar um momento em uma imagem de cartão-postal (a cena do seu bichinho, o nome dele, a data, o número de pausas de hoje e uma notinha, como quantas vezes seu bichinho pegou o laser ou o brinquedo naquela pausa). Ela é desenhada no seu computador a partir das ilustrações do próprio app; não é uma captura de tela. Ela só vai para onde você a enviar com Compartilhar, Salvar ou Copiar; os apps nunca a enviam para lugar nenhum. A cópia temporária criada para compartilhar é apagada no próximo cartão-postal ou quando o app é encerrado ou aberto de novo.</p>
+
+<h2>Atalhos, Siri e Spotlight (Mac) · Lista de Atalhos (Windows)</h2>
+<p>No Mac, os apps oferecem algumas ações no app Atalhos, na Siri e no Spotlight: fazer pausa agora, pausar, retomar, bloquear com o Pati ou o Hav, tempo até a próxima pausa e número de pausas de hoje. No Windows, clicar com o botão direito no app na barra de tarefas ou no menu Iniciar oferece fazer pausa agora, pausar por 30 minutos e bloquear com o Pati ou o Hav. Essas ações fazem exatamente o mesmo que os botões da janela do app e só são executadas quando você as inicia (ou em uma automação que você mesmo configurou). Elas não salvam nada novo e não enviam nada. Se você usar a Siri, a Apple processa seu pedido de voz; o app só recebe a ação a executar.</p>
+
+<h2>Bloqueio de brincadeira (“Bloquear com o Pati” / “Bloquear com o Hav”)</h2>
+<p>O bloqueio de brincadeira opcional cobre a tela com seu bichinho até você desbloqueá-lo. Ele não é um bloqueio real do sistema: sua sessão continua iniciada. Enquanto ele está ativo, a troca de apps fica temporariamente bloqueada (Mac: ⌘Tab, Dock, barra de menus e Forçar Encerrar, por meio de opções padrão do macOS; Windows: a tecla Windows, Alt+Tab e Alt+F4, por meio de um hook de teclado temporário que observa apenas essas teclas, não grava nada e é removido quando o bloqueio termina).</p>
+<p>Para desbloquear no <strong>macOS</strong>, você toca no símbolo do Touch ID mostrado dentro da cena do bloqueio de brincadeira; o próprio macOS verifica sua digital (LocalAuthentication), e “Desbloquear com senha” abre a janela de senha do próprio macOS. No <strong>Windows</strong>, o Windows pede seu PIN, sua digital, seu rosto ou sua senha pelo Windows Hello ou pela própria tela de entrada. O app nunca vê esses dados; ele só fica sabendo se o desbloqueio deu certo.</p>
+
+<h2>Mesa animada</h2>
+<p>Quando “Pati animado na Mesa” (ou “Hav animado na Mesa”) está ativado, o app desenha seu bichinho em uma janela própria atrás dos ícones da mesa. Ele não lê, copia nem altera a imagem do seu papel de parede, e os cliques passam direto para a mesa. Quando você desativa a opção, seu próprio papel de parede volta a aparecer.</p>
+
+<h2>Música da cena e sons</h2>
+<p>A música de fundo suave nas cenas de pausa e de bloqueio de brincadeira e os sons do bichinho vêm de arquivos dentro do app e são reproduzidos localmente. Nada é transmitido pela internet nem baixado. O ícone de alto-falante no canto superior direito da cena desativa ou ativa a música; essa escolha é salva com seus ajustes.</p>
+
+<h2>Idioma, região e data</h2>
+<p>Para mostrar os convidados de datas especiais (gatos e cachorros de datas comemorativas) nos dias certos e nos países certos, os apps leem a data, o idioma e a região configurados no seu computador. Essas informações são usadas apenas no seu computador e não são salvas.</p>
+
+<h2>Ajustes do sistema</h2>
+<p><strong>Abrir ao iniciar sessão:</strong> quando está ativado, o macOS ou o Windows abre o app quando você inicia a sessão, apenas na sua conta de usuário. No Mac, fica desativado até você escolher (por exemplo, na primeira tela de boas-vindas); no Windows, vem ativado após a instalação. Você pode desativá-lo nos ajustes do app, em Ajustes do Sistema &gt; Geral &gt; Itens de Início, no macOS, ou em Configurações &gt; Aplicativos &gt; Inicialização, no Windows. Os apps não alteram nenhum outro ajuste do sistema.</p>
+<p><strong>O botão ⓘ (somente nas versões de download direto):</strong> ele lê os ajustes de desligamento da tela e de pedido de senha após o repouso do seu computador com as ferramentas do próprio sistema (Mac: ferramentas do macOS; Windows: powercfg) e só mostra essas informações para você. Nada é salvo. As versões da App Store e da Microsoft Store não executam essas ferramentas.</p>
+
+<h2>Compras (versões da App Store e da Microsoft Store)</h2>
+<p>As versões da App Store e da Microsoft Store oferecem pacotes extras opcionais de gatos e cachorros como compras únicas dentro do app; três bichinhos e os convidados de datas especiais são sempre gratuitos. As compras são feitas inteiramente pela Apple ou pela Microsoft, com a sua própria conta; seus dados de pagamento nunca chegam ao app nem a nós. O app recebe da loja apenas os preços dos pacotes e quais pacotes você tem, e guarda essa lista no seu computador para que os bichinhos certos fiquem disponíveis offline. Restaurar compras consulta a loja novamente. A compra e o pagamento estão sujeitos à política de privacidade da Apple ou da Microsoft. As versões de download direto não têm compras.</p>
+
+<h2>Feedback</h2>
+<p>“Enviar feedback” abre o seu próprio app de e-mail com uma mensagem endereçada a <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a>. A mensagem contém a versão do app, a sua versão do macOS ou do Windows e o idioma do app. Nada é enviado a menos que você clique em Enviar. Os e-mails que você nos envia são usados apenas para responder a você e para melhorar os apps.</p>
+
+<h2>Como apagar seus dados</h2>
+<p><strong>Mac:</strong> encerre o app e mova-o da pasta Aplicativos para o Lixo. Para remover também seus ajustes, contagens de pausas, nomes e aparências, execute isto no Terminal (o app também mostra o comando exato para a sua cópia em Ajustes &gt; “Privacidade e uso de dados…”):</p>
+<p>Pati: <code>defaults delete com.canakarsu.pati; rm -f ~/Library/Application\ Support/com.canakarsu.pati/names.json ~/Library/Application\ Support/com.canakarsu.pati/appearance.json</code></p>
+<p>Hav: <code>defaults delete com.canakarsu.hav; rm -f ~/Library/Application\ Support/com.canakarsu.hav/names.json ~/Library/Application\ Support/com.canakarsu.hav/appearance.json</code></p>
+<p>A versão da App Store guarda tudo isso dentro do contêiner do próprio app. Depois de remover o app, apagar essa pasta remove tudo: <code>rm -rf ~/Library/Containers/com.canakarsu.pati</code> (Hav: <code>rm -rf ~/Library/Containers/com.canakarsu.hav</code>).</p>
+<p><strong>Windows:</strong> desinstale o app em Configurações &gt; Aplicativos &gt; Aplicativos instalados. Na versão da Microsoft Store, isso também remove seus ajustes, nomes e aparências. Na versão de download direto, você também pode apagar a pasta <code>%LOCALAPPDATA%\Pati</code> ou <code>%LOCALAPPDATA%\Hav</code>.</p>
+
+<h2>Crianças</h2>
+<p>Os apps não coletam informações pessoais de ninguém, incluindo crianças.</p>
+
+<h2>Seus direitos</h2>
+<p>Respeitamos seus direitos de acesso, correção e exclusão dos seus dados previstos no GDPR (Regulamento Geral sobre a Proteção de Dados da UE) e na KVKK da Turquia (Lei nº 6698). Como os apps não nos enviam nada, não temos nenhum registro sobre você; você pode apagar os dados do seu computador a qualquer momento, como descrito acima.</p>
+
+<h2>Alterações</h2>
+<p>Se esta política mudar, a versão atualizada será publicada neste endereço e nos apps. Se algum dia os apps começarem a coletar dados, isso será anunciado claramente com antecedência e seu consentimento será solicitado quando necessário.</p>
+
+<h2>Contato</h2>
+<p>Desenvolvedor e controlador dos dados: Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">Suporte</a></p>
+</section>
+
+<hr>
+
 <section id="tr" lang="tr">
 <h1>Gizlilik Politikası</h1>
 <p class="date">Pati – The Break Cat ve Hav – The Break Dog · Mac (App Store ve doğrudan indirme) ile Windows (Microsoft Store ve doğrudan indirme) · Son güncelleme: 17 Ekim 2026</p>
@@ -134,7 +601,7 @@
 
 <h2>Oyun kilidi ("Pati ile kilitle" / "Hav ile kilitle")</h2>
 <p>İsteğe bağlı oyun kilidi, sen açana kadar ekranı evcil hayvanınla kaplar. Gerçek bir sistem kilidi değildir: oturumun açık kalır. Açıkken uygulamalar arası geçiş geçici olarak engellenir (Mac: ⌘Tab, Dock, menü çubuğu ve Zorla Çık, macOS'un standart seçenekleriyle; Windows: Windows tuşu, Alt+Tab ve Alt+F4, yalnızca bu tuşlara bakan, hiçbir şey kaydetmeyen ve kilit bitince kaldırılan geçici bir klavye kancasıyla).</p>
-<p>Mac'te kilidi açarken oyun kilidi sahnesinin içinde görünen Touch ID simgesine dokunursun; parmak izini macOS'un kendisi doğrular (LocalAuthentication), "Şifreyle aç" ise macOS'un kendi şifre penceresini açar. <strong>Windows</strong>'ta PIN'ini, parmak izini, yüzünü ya da şifreni Windows Hello ya da Windows'un kendi ekranı sorar. Uygulama bunları görmez; yalnızca kilidin açılıp açılmadığını öğrenir.</p>
+<p><strong>Mac</strong>'te kilidi açarken oyun kilidi sahnesinin içinde görünen Touch ID simgesine dokunursun; parmak izini macOS'un kendisi doğrular (LocalAuthentication), "Şifreyle aç" ise macOS'un kendi şifre penceresini açar. <strong>Windows</strong>'ta PIN'ini, parmak izini, yüzünü ya da şifreni Windows Hello ya da Windows'un kendi ekranı sorar. Uygulama bunları görmez; yalnızca kilidin açılıp açılmadığını öğrenir.</p>
 
 <h2>Canlı masaüstü</h2>
 <p>"Canlı masaüstü" açıkken uygulama evcil hayvanını masaüstü simgelerinin arkasındaki kendi penceresinde çizer. Duvar kâğıdını okumaz, kopyalamaz ya da değiştirmez; tıklamalar masaüstüne geçer. Kapatınca kendi duvar kâğıdın yine görünür.</p>
@@ -174,6 +641,270 @@
 <h2>İletişim</h2>
 <p>Geliştirici ve veri sorumlusu: Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">Destek</a></p>
 </section>
+
+<hr>
+
+<section id="ja" lang="ja">
+<h1>プライバシーポリシー</h1>
+<p class="date">Pati – The Break Cat および Hav – The Break Dog · Mac（App Store版および直接ダウンロード版）と Windows（Microsoft Store版および直接ダウンロード版） · 最終更新日：2026年10月17日</p>
+<p>PatiとHavは休憩リマインダーアプリです。すべての処理はお使いのコンピュータ上で行われます。このポリシーは、両アプリのすべてのバージョンに適用されます。</p>
+
+<h2>私たちは何も収集しません</h2>
+<p>アプリにはアカウント、サインイン、分析、広告、トラッキングは一切ありません。私たちにもほかの誰にも、データを送信することはありません。App Store版とMicrosoft Store版がインターネットに接続するのは、任意のアプリ内課金を行う場合だけで、その処理はすべてAppleまたはMicrosoftを通じて行われます（「購入」を参照）。</p>
+
+<h2>お使いのコンピュータに保存されるもの</h2>
+<p>以下の情報は、お使いのコンピュータ上のアプリ専用のファイルにのみ保存され、外に出ることはありません。私たちが見ることもできません。</p>
+<ul>
+<li><strong>設定：</strong>作業と休憩の時間、選んだ猫または犬、レーザーやおもちゃのスタイル、サウンド、言語、動くデスクトップ、休憩前のお知らせと「通話中・プレゼン中は待つ」のオプション、テーマ（Windows）、シーンの音楽をオフにしたかどうか、今日完了した休憩の回数、そして過去30日間の1日ごとの回数（休憩、ペットがレーザーやおもちゃをつかまえた回数、なでた秒数、おなかを見せた回数）と休憩の合計回数。これらは数字だけで、肉球の足あと、今日のまとめ、休憩の記念メッセージに使われます。30日より古い日のデータは自動的に削除されます。Macではアプリ専用の環境設定（UserDefaults）に、Windowsでは<code>settings.json</code>に保存されます。</li>
+<li>猫や犬に付けた<strong>名前</strong>は<code>names.json</code>に保存されます。名前を消すと、そのペット本来の名前に戻り、記録は削除されます。</li>
+<li>選んだ<strong>見た目</strong>（毛色、模様、目、耳、しっぽ、ぶち模様など）は、名前と同じ場所の<code>appearance.json</code>に保存されます。「元に戻す」を選ぶと、そのペットの記録が削除されます。</li>
+<li><strong>クラッシュログ（Windows）：</strong>アプリが予期せず終了した場合、エラーの技術的な詳細が同じフォルダに書き込まれることがあります。これもお使いのコンピュータから出ることはありません。</li>
+</ul>
+
+<h2>通話とプレゼンテーション（ミーティングシールド）</h2>
+<p>休憩の時間になり、「通話中・プレゼン中は待つ」がオンになっている場合、アプリが確認するのは、いずれかのアプリがカメラまたはマイクを現在使用している<em>かどうか</em>（Mac App Store版はマイクのみを確認します。App Storeのサンドボックスではカメラの確認が許可されていないためです）と、プレゼンテーション（MacではKeynoteまたはPowerPoint、WindowsではWindowsが報告するプレゼンテーションモードまたは全画面表示）が画面全体に表示されているかどうかだけです。該当する場合は休憩を待ち、通話やプレゼンテーションが終わってから約30秒後に開始します。音声や映像を取得することはなく、ウインドウのタイトルや会議名を読み取ることもなく、カメラ、マイク、画面収録の許可も求めず、これに関する情報は何も保存しません。この機能は設定でオフにできます。</p>
+
+<h2>休憩前のお知らせ</h2>
+<p>休憩の約60秒前に、ペットの小さなウインドウが画面の端に表示されます。表示する場所を決めるため、アプリはその時点でポインタがどの画面にあるかだけを確認します。この情報は保存されません。メニューバーのアイコン（Mac）またはシステムトレイのアイコン（Windows）が隠れている場合は、その近くに小さなカウントダウンが表示されます。これを判断するため、アプリは自分のアイコンが表示されているかどうかだけを確認します。休憩前のお知らせは設定でオフにできます。</p>
+
+<h2>キーボード、マウス、画面</h2>
+<p>アプリは、あなたが入力した内容、クリックした内容、画面に表示されている内容を読み取ったり、記録したり、保存したり、送信したりすることは一切ありません。スクリーンショットを撮ることはなく、アクセシビリティ、画面収録、カメラ、マイク、位置情報へのアクセスも求めません。休憩中やプレイロック中に、アプリ自身の画面で押したキーやマウスの動きは、その場でのペットの反応と、休憩を終了する操作（Escキーまたはスペースキーを3回）にのみ使われ、どこにも書き込まれることはありません。</p>
+
+<h2>ポストカード</h2>
+<p>アプリは、ひとときをポストカードの画像にすることができます（ペットのシーン、名前、日付、今日の休憩回数、そしてその休憩でペットがレーザーやおもちゃを何回つかまえたかなどの短いひとこと）。画像はお使いのコンピュータ上で、アプリ自身の絵から作られます。スクリーンショットではありません。「共有」「保存」「コピー」であなたが送った先にだけ届き、アプリがどこかへアップロードすることはありません。共有のために作られる一時コピーは、次のポストカードを作るとき、またはアプリの終了時や次回の起動時に削除されます。</p>
+
+<h2>ショートカット、Siri、Spotlight（Mac） · ジャンプリスト（Windows）</h2>
+<p>Macでは、アプリはショートカットApp、Siri、Spotlightでいくつかのアクションを提供します：今すぐ休憩、一時停止、再開、PatiまたはHavでロック、次の休憩までの時間、今日の休憩回数。Windowsでは、タスクバーまたはスタートでアプリを右クリックすると、今すぐ休憩、30分一時停止、PatiまたはHavでロックを選べます。これらのアクションはアプリのウインドウにあるボタンとまったく同じ動作をし、あなたが実行したとき（またはあなた自身が設定したオートメーションの中で）にだけ動作します。新たに何かを保存することも、何かを送信することもありません。Siriを使う場合、音声リクエストはAppleが処理し、アプリは実行するアクションだけを受け取ります。</p>
+
+<h2>プレイロック（「Patiでロック」/「Havでロック」）</h2>
+<p>任意のプレイロックは、解除するまでペットで画面を覆います。これは本当のシステムロックではなく、セッションはサインインしたままです。オンの間は、アプリの切り替えが一時的にブロックされます（Mac：⌘Tab、Dock、メニューバー、強制終了を標準のmacOSオプションでブロック。Windows：Windowsキー、Alt+Tab、Alt+F4を一時的なキーボードフックでブロック。このフックはそれらのキーだけを監視し、何も記録せず、ロックの終了時に削除されます）。</p>
+<p><strong>macOS</strong>でロックを解除するには、プレイロックのシーン内に表示されるTouch IDの記号に触れます。指紋はmacOS自身が確認し（LocalAuthentication）、「パスワードで解除」を選ぶとmacOS標準のパスワードウインドウが開きます。<strong>Windows</strong>では、Windows HelloまたはWindows自身のサインイン画面で、WindowsがPIN、指紋、顔、またはパスワードを求めます。アプリがそれらを見ることはなく、ロック解除が成功したかどうかだけを知ります。</p>
+
+<h2>動くデスクトップ</h2>
+<p>「動くデスクトップ」がオンのとき、アプリはデスクトップのアイコンの背後にある専用のウインドウにペットを描きます。壁紙の画像を読み取ったり、コピーしたり、変更したりすることはなく、クリックはそのままデスクトップに届きます。オフにすると、元の壁紙が再び表示されます。</p>
+
+<h2>シーンの音楽とサウンド</h2>
+<p>休憩やプレイロックのシーンで流れる静かなBGMとペットの鳴き声は、アプリ内のファイルからローカルで再生されます。ストリーミングやダウンロードは一切行いません。シーンの右上にあるスピーカーのアイコンで音楽をオン/オフでき、その選択は設定とともに保存されます。</p>
+
+<h2>言語、地域、日付</h2>
+<p>特別な日のゲスト（特別な日の猫や犬）を正しい日に正しい国で表示するため、アプリはお使いのコンピュータに設定されている日付、言語、地域を読み取ります。これらの情報はお使いのコンピュータ上でのみ使われ、保存されません。</p>
+
+<h2>システム設定</h2>
+<p><strong>ログイン時に開く：</strong>オンにすると、あなたのユーザーアカウントに限り、サインイン時にmacOSまたはWindowsがアプリを起動します。Macでは自分で選ぶまで（たとえば最初のようこそ画面で）オフになっており、Windowsではインストール後にオンになっています。オフにするには、アプリの設定、macOSのシステム設定 &gt; 一般 &gt; ログイン項目、またはWindowsの設定 &gt; アプリ &gt; スタートアップを使います。アプリがそれ以外のシステム設定を変更することはありません。</p>
+<p><strong>ⓘボタン（直接ダウンロード版のみ）：</strong>お使いのコンピュータのディスプレイのスリープ設定と、スリープ後のパスワード要求の設定をシステム標準のツール（Mac：macOSのツール、Windows：powercfg）で読み取り、あなたに表示するだけです。何も保存されません。App Store版とMicrosoft Store版では、これらのツールは実行されません。</p>
+
+<h2>購入（App Store版とMicrosoft Store版）</h2>
+<p>App Store版とMicrosoft Store版では、任意の追加の猫・犬パックを買い切りのアプリ内課金として提供しています。3匹のペットと特別な日のゲストは常に無料です。購入はすべて、あなた自身のアカウントを使ってAppleまたはMicrosoftを通じて行われ、支払い情報がアプリや私たちに届くことはありません。アプリがストアから知るのはパックの価格と所有しているパックだけで、オフラインでも正しいペットを使えるよう、そのリストをお使いのコンピュータに保存します。購入を復元すると、ストアに改めて問い合わせます。購入と支払いには、AppleまたはMicrosoftのプライバシーポリシーが適用されます。直接ダウンロード版には購入機能はありません。</p>
+
+<h2>フィードバック</h2>
+<p>「フィードバックを送る」を選ぶと、お使いのメールアプリが開き、<a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a>宛てのメッセージが作成されます。メッセージには、アプリのバージョン、macOSまたはWindowsのバージョン、アプリの言語が含まれます。あなたが送信を押さない限り、何も送信されません。お送りいただいたメールは、返信とアプリの改善のためにのみ使用します。</p>
+
+<h2>データの削除方法</h2>
+<p><strong>Mac：</strong>アプリを終了し、アプリケーションフォルダからゴミ箱に移動します。設定、休憩回数、名前、見た目も削除するには、ターミナルで次のコマンドを実行します（お使いのアプリに合った正確なコマンドは、アプリの設定 &gt;「プライバシーとデータの利用…」にも表示されます）：</p>
+<p>Pati：<code>defaults delete com.canakarsu.pati; rm -f ~/Library/Application\ Support/com.canakarsu.pati/names.json ~/Library/Application\ Support/com.canakarsu.pati/appearance.json</code></p>
+<p>Hav：<code>defaults delete com.canakarsu.hav; rm -f ~/Library/Application\ Support/com.canakarsu.hav/names.json ~/Library/Application\ Support/com.canakarsu.hav/appearance.json</code></p>
+<p>App Store版は、これらすべてをアプリ専用のコンテナ内に保存します。アプリを削除した後、そのフォルダを削除するとすべてが消去されます：<code>rm -rf ~/Library/Containers/com.canakarsu.pati</code>（Hav：<code>rm -rf ~/Library/Containers/com.canakarsu.hav</code>）。</p>
+<p><strong>Windows：</strong>Windowsの設定 &gt; アプリ &gt; インストールされているアプリでアプリをアンインストールします。Microsoft Store版では、これにより設定、名前、見た目も削除されます。直接ダウンロード版では、<code>%LOCALAPPDATA%\Pati</code>または<code>%LOCALAPPDATA%\Hav</code>フォルダも削除できます。</p>
+
+<h2>お子さまについて</h2>
+<p>アプリは、お子さまを含め、誰からも個人情報を収集しません。</p>
+
+<h2>あなたの権利</h2>
+<p>私たちは、GDPRおよびトルコのKVKK（法律第6698号）に基づく、データへのアクセス、訂正、削除を求めるあなたの権利を尊重します。アプリは私たちに何も送信しないため、私たちはあなたに関する記録を一切保有していません。お使いのコンピュータ上のデータは、上記の方法でいつでも削除できます。</p>
+
+<h2>変更</h2>
+<p>このポリシーが変更された場合は、更新版をこのアドレスとアプリ内で公開します。アプリが将来データを収集するようになる場合は、事前に明確にお知らせし、必要な場合はあなたの同意を求めます。</p>
+
+<h2>お問い合わせ</h2>
+<p>開発者およびデータ管理者：Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">サポート</a></p>
+</section>
+
+<hr>
+
+<section id="zh-Hans" lang="zh-Hans">
+<h1>隐私政策</h1>
+<p class="date">Pati – The Break Cat 和 Hav – The Break Dog · Mac（App Store 及直接下载版）和 Windows（Microsoft Store 及直接下载版）· 最后更新：2026年10月17日</p>
+<p>Pati 和 Hav 是休息提醒应用，完全在你的电脑上运行。本政策适用于这两款应用的所有版本。</p>
+
+<h2>我们不收集任何信息</h2>
+<p>这两款应用没有账户、无需登录，也没有分析、广告或跟踪。它们不会向我们或任何其他人发送数据。App Store 和 Microsoft Store 版本唯一需要联网的情况是可选的 App 内购买，购买完全通过 Apple 或 Microsoft 进行（参见“购买”）。</p>
+
+<h2>保存在你电脑上的内容</h2>
+<p>以下内容只保存在你的电脑上、应用自己的文件中，绝不会离开你的电脑。我们无法看到这些内容。</p>
+<ul>
+<li><strong>设置：</strong>工作和休息时长、你选择的猫或狗、激光或玩具样式、声音、语言、动态桌面、休息预告和“通话和演示时等待”选项、主题（Windows）、你是否关闭了场景音乐、今天完成的休息次数，以及最近 30 天的每日统计（休息次数、宠物抓到激光或玩具的次数、抚摸的秒数、翻肚皮的次数）和你的休息总次数。这些只是数字，用于爪印足迹、每日总结和休息里程碑；超过 30 天的数据会自动删除。在 Mac 上，它们保存在应用自己的偏好设置（UserDefaults）中；在 Windows 上，保存在 <code>settings.json</code> 中。</li>
+<li>你给猫或狗起的<strong>名字</strong>，保存在 <code>names.json</code> 中。如果你清除某个名字，宠物会恢复它原本的名字，该条目也会被删除。</li>
+<li>你为它们选择的<strong>外观</strong>（毛色、花纹、眼睛、耳朵、尾巴、斑纹），保存在名字文件旁边的 <code>appearance.json</code> 中。“恢复原样”会删除该宠物的条目。</li>
+<li><strong>崩溃日志（Windows）：</strong>如果应用意外关闭，错误的技术细节可能会写入同一文件夹。它会留在你的电脑上。</li>
+</ul>
+
+<h2>通话和演示（会议保护）</h2>
+<p>当休息时间到了且“通话和演示时等待”已打开时，应用只检查当前是否<em>有</em>应用正在使用摄像头或麦克风（Mac App Store 版本只检查麦克风，因为 App Store 沙盒不允许检查摄像头），以及是否有演示（Mac 上为 Keynote 讲演或 PowerPoint；Windows 上为 Windows 报告的演示模式或全屏模式）占满某个屏幕。随后应用会等待，并在通话或演示结束约 30 秒后开始休息。它绝不会录制声音或视频，绝不会读取窗口标题或会议名称，不请求摄像头、麦克风或录屏权限，也不保存与此相关的任何信息。你可以在设置中关闭此功能。</p>
+
+<h2>休息前的预告</h2>
+<p>休息开始前约 60 秒，屏幕边缘会出现一个带有你的宠物的小窗口。为了决定它出现的位置，应用只检查指针当时位于哪个屏幕上；此信息不会被保存。如果菜单栏图标（Mac）或系统托盘图标（Windows）被隐藏，其附近会出现一个小倒计时；为此应用只检查自己的图标是否可见。你可以在设置中关闭休息预告。</p>
+
+<h2>键盘、鼠标和屏幕</h2>
+<p>这两款应用绝不会读取、记录、保存或发送你输入的内容、你点按的内容或你屏幕上的内容。它们不截屏，也不请求辅助功能、录屏、摄像头、麦克风或位置访问权限。在休息或游戏锁期间，你在应用自己的画面上按下的按键和移动的鼠标只用于让宠物当下做出反应，以及让你退出休息（按 Esc 或空格键三次）；这些绝不会被写入任何地方。</p>
+
+<h2>明信片</h2>
+<p>应用可以把某个瞬间制作成一张明信片图片（你的宠物场景、它的名字、日期、今天的休息次数和一条简短说明，例如宠物在这次休息中抓到激光或玩具的次数）。它由应用自带的图画在你的电脑上绘制而成，并不是截屏。它只会去往你通过“共享”“存储”或“复制”发送的地方；应用绝不会把它上传到任何地方。为共享而生成的临时副本会在制作下一张明信片时、或应用退出或再次打开时删除。</p>
+
+<h2>快捷指令、Siri 和聚焦搜索（Mac）· 跳转列表（Windows）</h2>
+<p>在 Mac 上，应用在“快捷指令”App、Siri 和聚焦搜索中提供几个操作：现在休息、暂停、继续、用 Pati 或 Hav 锁定、距下次休息的时间以及今天的休息次数。在 Windows 上，在任务栏或“开始”菜单中右键点击应用，可以选择现在休息、暂停 30 分钟以及用 Pati 或 Hav 锁定。这些操作与应用窗口中的按钮作用完全相同，只在你启动它们时（或在你自己设置的自动化中）运行。它们不保存任何新内容，也不发送任何内容。如果你使用 Siri，你的语音请求由 Apple 处理；应用只会收到要执行的操作。</p>
+
+<h2>游戏锁（“用 Pati 锁定”/“用 Hav 锁定”）</h2>
+<p>可选的游戏锁会用你的宠物覆盖屏幕，直到你解锁为止。它不是真正的系统锁定：你的会话仍保持登录状态。游戏锁开启期间，切换应用会被暂时阻止（Mac：通过 macOS 的标准选项阻止 ⌘Tab、程序坞、菜单栏和强制退出；Windows：通过一个临时键盘钩子阻止 Windows 键、Alt+Tab 和 Alt+F4，该钩子只关注这些按键，不记录任何内容，并在游戏锁结束时移除）。</p>
+<p>在 <strong>macOS</strong> 上解锁时，你需要触碰游戏锁场景中显示的 触控 ID 符号；由 macOS 自己检查你的指纹（LocalAuthentication），“用密码解锁”会打开 macOS 自己的密码窗口。在 <strong>Windows</strong> 上，Windows 会通过 Windows Hello 或其自己的登录画面要求你输入 PIN、指纹、面部或密码。应用绝不会看到这些信息；它只会得知解锁是否成功。</p>
+
+<h2>动态桌面</h2>
+<p>当“动态桌面”打开时，应用会在桌面图标后方、它自己的窗口中绘制你的宠物。它不会读取、复制或更改你的墙纸图片，点按会直接穿透到桌面。关闭后，你自己的墙纸会重新显示。</p>
+
+<h2>场景音乐和声音</h2>
+<p>休息和游戏锁场景中轻柔的背景音乐以及宠物的声音都来自应用内的文件，并在本地播放。不会进行任何流式传输或下载。场景右上角的扬声器图标可以关闭或打开音乐；这一选择会随你的设置一起保存。</p>
+
+<h2>语言、地区和日期</h2>
+<p>为了在正确的日子、正确的国家显示节日来客（特殊日子的猫和狗），应用会读取你电脑上设置的日期、语言和地区。这些信息只在你的电脑上使用，不会被保存。</p>
+
+<h2>系统设置</h2>
+<p><strong>登录时打开：</strong>打开后，macOS 或 Windows 会在你登录时启动应用，仅针对你的用户账户。在 Mac 上，此选项默认关闭，直到你选择打开（例如在第一个欢迎画面中）；在 Windows 上，安装后即为打开状态。你可以在应用的设置中、在 macOS 的“系统设置”&gt;“通用”&gt;“登录项”中，或在 Windows 的“设置”&gt;“应用”&gt;“启动”中将其关闭。应用不会更改任何其他系统设置。</p>
+<p><strong>ⓘ 按钮（仅限直接下载版）：</strong>它使用系统自带的工具（Mac：macOS 工具；Windows：powercfg）读取你电脑的显示器睡眠和睡眠后需要密码的设置，并只将其显示给你。不会保存任何内容。App Store 和 Microsoft Store 版本不会运行这些工具。</p>
+
+<h2>购买（App Store 和 Microsoft Store 版本）</h2>
+<p>App Store 和 Microsoft Store 版本以一次性 App 内购买的形式提供可选的额外猫狗包；三只宠物和特殊日子的来客始终免费。购买完全通过 Apple 或 Microsoft 使用你自己的账户完成；你的付款信息绝不会到达应用或我们。应用只从商店获知各个宠物包的价格以及你拥有哪些宠物包，并将这份列表保存在你的电脑上，以便离线时也能使用正确的宠物。恢复购买时会再次向商店查询。购买和付款适用 Apple 或 Microsoft 的隐私政策。直接下载版不包含任何购买内容。</p>
+
+<h2>反馈</h2>
+<p>“发送反馈”会打开你自己的邮件应用，并生成一封发给 <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> 的邮件。邮件中包含应用版本、你的 macOS 或 Windows 版本以及应用语言。除非你按下“发送”，否则不会发送任何内容。你发给我们的邮件只用于回复你和改进应用。</p>
+
+<h2>如何删除你的数据</h2>
+<p><strong>Mac：</strong>退出应用，并将其从“应用程序”文件夹移到废纸篓。如果还要删除你的设置、休息次数、名字和外观，请在“终端”中运行以下命令（应用也会在“设置”&gt;“隐私与数据使用…”中显示适用于你这份应用的确切命令）：</p>
+<p>Pati：<code>defaults delete com.canakarsu.pati; rm -f ~/Library/Application\ Support/com.canakarsu.pati/names.json ~/Library/Application\ Support/com.canakarsu.pati/appearance.json</code></p>
+<p>Hav：<code>defaults delete com.canakarsu.hav; rm -f ~/Library/Application\ Support/com.canakarsu.hav/names.json ~/Library/Application\ Support/com.canakarsu.hav/appearance.json</code></p>
+<p>App Store 版本把所有这些内容都保存在应用自己的容器中。移除应用后，删除该文件夹即可删除全部内容：<code>rm -rf ~/Library/Containers/com.canakarsu.pati</code>（Hav：<code>rm -rf ~/Library/Containers/com.canakarsu.hav</code>）。</p>
+<p><strong>Windows：</strong>在 Windows 的“设置”&gt;“应用”&gt;“安装的应用”中卸载应用。对于 Microsoft Store 版本，这也会删除你的设置、名字和外观。对于直接下载版，你还可以删除 <code>%LOCALAPPDATA%\Pati</code> 或 <code>%LOCALAPPDATA%\Hav</code> 文件夹。</p>
+
+<h2>儿童</h2>
+<p>这两款应用不会收集任何人的个人信息，包括儿童。</p>
+
+<h2>你的权利</h2>
+<p>我们尊重你根据《通用数据保护条例》（GDPR）和土耳其 KVKK（第6698号法律）享有的访问、更正和删除你的数据的权利。由于应用不会向我们发送任何内容，我们不持有关于你的任何记录；你可以随时按照上文所述删除你电脑上的数据。</p>
+
+<h2>变更</h2>
+<p>如果本政策发生变更，更新后的版本将发布在此地址和应用中。如果应用将来开始收集数据，我们会事先明确公告，并在需要时征得你的同意。</p>
+
+<h2>联系方式</h2>
+<p>开发者及数据控制者：Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">支持</a></p>
+</section>
+
+<hr>
+
+<section id="ko" lang="ko">
+<h1>개인정보 처리방침</h1>
+<p class="date">Pati – The Break Cat 및 Hav – The Break Dog · Mac(App Store 및 직접 다운로드) 및 Windows(Microsoft Store 및 직접 다운로드) · 최종 업데이트: 2026년 10월 17일</p>
+<p>Pati와 Hav는 휴식 알림 앱이에요. 모든 기능이 사용자의 컴퓨터에서만 실행돼요. 이 방침은 두 앱의 모든 버전에 적용돼요.</p>
+
+<h2>어떤 정보도 수집하지 않아요</h2>
+<p>앱에는 계정, 로그인, 분석, 광고, 추적이 없어요. 저희나 다른 누구에게도 데이터를 보내지 않아요. App Store 및 Microsoft Store 버전이 인터넷에 연결되는 유일한 경우는 선택적인 앱 내 구입 때뿐이며, 구입은 전적으로 Apple 또는 Microsoft를 통해 이루어져요('구입' 섹션 참고).</p>
+
+<h2>컴퓨터에만 저장되는 정보</h2>
+<p>다음 정보는 사용자의 컴퓨터에 있는 앱 전용 파일에만 저장되며, 컴퓨터 밖으로 나가지 않아요. 저희는 이 정보를 볼 수 없어요.</p>
+<ul>
+<li><strong>설정:</strong> 작업 및 휴식 시간, 선택한 고양이 또는 강아지, 레이저 또는 장난감 모양, 사운드, 언어, 움직이는 데스크탑, 미리 알림 및 '통화·발표 중에는 기다리기' 옵션, 테마(Windows), 장면 음악을 껐는지 여부, 오늘 완료한 휴식 횟수, 그리고 최근 30일 동안의 일별 횟수(휴식, 반려동물이 레이저나 장난감을 잡은 횟수, 쓰다듬은 시간(초), 배를 보이며 구른 횟수)와 전체 휴식 횟수. 이는 숫자일 뿐이며 발자국 기록, 하루 마무리 요약, 휴식 달성 기록에만 사용돼요. 30일이 지난 날의 기록은 자동으로 삭제돼요. Mac에서는 앱 전용 환경설정(UserDefaults)에, Windows에서는 <code>settings.json</code>에 저장돼요.</li>
+<li>고양이나 강아지에게 지어 준 <strong>이름</strong>은 <code>names.json</code>에 저장돼요. 이름을 지우면 반려동물의 원래 이름으로 돌아가고 해당 항목은 삭제돼요.</li>
+<li>선택한 <strong>모습</strong>(털 색, 무늬, 눈, 귀, 꼬리, 반점)은 이름과 같은 위치의 <code>appearance.json</code>에 저장돼요. '원래대로'를 누르면 해당 반려동물의 항목이 삭제돼요.</li>
+<li><strong>오류 기록(Windows):</strong> 앱이 예기치 않게 종료되면 오류의 기술적인 세부 정보가 같은 폴더에 기록될 수 있어요. 이 기록은 컴퓨터에만 남아요.</li>
+</ul>
+
+<h2>통화 및 발표(회의 보호)</h2>
+<p>휴식 시간이 되었을 때 '통화·발표 중에는 기다리기'가 켜져 있으면, 앱은 현재 어떤 앱이 카메라나 마이크를 사용 중인지 <em>여부</em>(Mac App Store 버전은 App Store 샌드박스에서 카메라 확인을 허용하지 않기 때문에 마이크만 확인해요)와 발표(Mac에서는 Keynote 또는 PowerPoint, Windows에서는 Windows가 알려 주는 프레젠테이션 모드 또는 전체 화면 모드)가 화면을 가득 채우고 있는지만 확인해요. 그런 다음 기다렸다가 통화나 발표가 끝나고 약 30초 뒤에 휴식을 시작해요. 소리나 영상을 녹음·녹화하지 않고, 창 제목이나 회의 이름을 읽지 않으며, 카메라, 마이크 또는 화면 기록 권한을 요청하지 않고, 이와 관련해 아무것도 저장하지 않아요. 이 기능은 설정에서 끌 수 있어요.</p>
+
+<h2>휴식 전 미리 알림</h2>
+<p>휴식 약 60초 전에 반려동물이 있는 작은 창이 화면 가장자리에 나타나요. 창이 나타날 위치를 정하기 위해 앱은 그 순간 포인터가 어느 화면에 있는지만 확인하며, 이 정보는 저장되지 않아요. 메뉴 막대 아이콘(Mac) 또는 트레이 아이콘(Windows)이 숨겨져 있으면 그 근처에 작은 카운트다운이 나타나요. 이를 판단하기 위해 앱은 자신의 아이콘이 보이는지만 확인해요. 미리 알림은 설정에서 끌 수 있어요.</p>
+
+<h2>키보드, 마우스 및 화면</h2>
+<p>앱은 사용자가 입력하는 내용, 클릭하는 대상, 화면에 표시된 내용을 절대 읽거나 기록하거나 저장하거나 전송하지 않아요. 스크린샷을 찍지 않으며 손쉬운 사용, 화면 기록, 카메라, 마이크 또는 위치 접근 권한을 요청하지 않아요. 휴식 중이나 놀이 잠금 중에 앱 자체 화면에서 누르는 키와 마우스 움직임은 그 순간 반려동물의 반응과 휴식을 끝낼 수 있게 하는 데에만(Esc 또는 스페이스 바를 세 번) 사용되며, 어디에도 기록되지 않아요.</p>
+
+<h2>엽서</h2>
+<p>앱은 한 순간을 엽서 이미지로 만들 수 있어요(반려동물의 장면, 이름, 날짜, 오늘의 휴식 횟수, 그리고 그 휴식에서 반려동물이 레이저나 장난감을 잡은 횟수 같은 짧은 메모). 엽서는 앱 자체 그림으로 컴퓨터에서 그려지며, 스크린샷이 아니에요. 엽서는 공유, 저장 또는 복사로 사용자가 보내는 곳에만 전달되며, 앱이 엽서를 어디에도 업로드하지 않아요. 공유를 위해 만든 임시 사본은 다음 엽서를 만들 때 또는 앱을 종료하거나 다시 열 때 삭제돼요.</p>
+
+<h2>단축어, Siri 및 Spotlight(Mac) · 점프 목록(Windows)</h2>
+<p>Mac에서는 단축어 앱, Siri, Spotlight에서 몇 가지 동작을 제공해요. 지금 휴식하기, 일시 정지, 재개, Pati 또는 Hav로 잠그기, 다음 휴식까지 남은 시간, 오늘의 휴식 횟수예요. Windows에서는 작업 표시줄이나 시작에서 앱을 마우스 오른쪽 버튼으로 클릭하면 지금 휴식하기, 30분 일시 정지, Pati 또는 Hav로 잠그기를 사용할 수 있어요. 이 동작들은 앱 창의 버튼과 똑같은 일을 하며, 사용자가 직접 실행할 때(또는 직접 설정한 자동화에서)만 실행돼요. 새로운 정보를 저장하지 않고 아무것도 전송하지 않아요. Siri를 사용하면 음성 요청은 Apple이 처리하며, 앱은 실행할 동작만 전달받아요.</p>
+
+<h2>놀이 잠금('Pati로 잠그기' / 'Hav로 잠그기')</h2>
+<p>선택 기능인 놀이 잠금은 잠금을 해제할 때까지 반려동물로 화면을 덮어요. 실제 시스템 잠금은 아니며, 세션은 로그인된 상태로 유지돼요. 놀이 잠금이 켜져 있는 동안에는 앱 전환이 일시적으로 차단돼요(Mac: 표준 macOS 옵션을 통해 ⌘Tab, Dock, 메뉴 막대, 강제 종료 차단, Windows: 해당 키만 확인하고 아무것도 기록하지 않으며 잠금이 끝나면 제거되는 임시 키보드 후크를 통해 Windows 키, Alt+Tab, Alt+F4 차단).</p>
+<p><strong>macOS</strong>에서 잠금을 해제하려면 놀이 잠금 장면 안에 표시되는 Touch ID 기호를 터치해요. 지문은 macOS가 직접 확인하며(LocalAuthentication), '암호로 해제'를 누르면 macOS 자체 암호 창이 열려요. <strong>Windows</strong>에서는 Windows가 Windows Hello 또는 자체 로그인 화면을 통해 PIN, 지문, 얼굴 또는 암호를 요청해요. 앱은 이러한 정보를 절대 볼 수 없으며, 잠금 해제에 성공했는지 여부만 알 수 있어요.</p>
+
+<h2>움직이는 데스크탑</h2>
+<p>'움직이는 데스크탑'이 켜져 있으면 앱은 데스크탑 아이콘 뒤에 있는 자체 창에 반려동물을 그려요. 배경화면 이미지를 읽거나 복사하거나 변경하지 않으며, 클릭은 데스크탑으로 그대로 전달돼요. 이 기능을 끄면 원래 배경화면이 다시 표시돼요.</p>
+
+<h2>장면 음악 및 사운드</h2>
+<p>휴식 및 놀이 잠금 장면의 잔잔한 배경 음악과 반려동물 소리는 앱 안에 있는 파일에서 나오며 컴퓨터에서 재생돼요. 아무것도 스트리밍하거나 다운로드하지 않아요. 장면 오른쪽 위 모서리의 스피커 아이콘으로 음악을 끄거나 켤 수 있으며, 이 선택은 설정과 함께 저장돼요.</p>
+
+<h2>언어, 지역 및 날짜</h2>
+<p>기념일 손님(특별한 날의 고양이와 강아지)을 알맞은 날짜와 국가에 보여 주기 위해 앱은 컴퓨터에 설정된 날짜, 언어, 지역을 읽어요. 이 정보는 컴퓨터에서만 사용되며 저장되지 않아요.</p>
+
+<h2>시스템 설정</h2>
+<p><strong>로그인 시 열기:</strong> 이 기능이 켜져 있으면 로그인할 때 macOS 또는 Windows가 사용자 계정에 대해서만 앱을 시작해요. Mac에서는 사용자가 선택하기 전까지(예: 첫 환영 화면에서) 꺼져 있고, Windows에서는 설치 후 켜져 있어요. 앱 설정, macOS의 시스템 설정 &gt; 일반 &gt; 로그인 항목, 또는 Windows의 설정 &gt; 앱 &gt; 시작 프로그램에서 끌 수 있어요. 앱은 다른 시스템 설정을 변경하지 않아요.</p>
+<p><strong>ⓘ 버튼(직접 다운로드 버전만 해당):</strong> 시스템 자체 도구(Mac: macOS 도구, Windows: powercfg)로 컴퓨터의 디스플레이 잠자기 설정과 잠자기 후 암호 요구 설정을 읽어 사용자에게 보여 주기만 해요. 아무것도 저장하지 않아요. App Store 및 Microsoft Store 버전은 이러한 도구를 실행하지 않아요.</p>
+
+<h2>구입(App Store 및 Microsoft Store 버전)</h2>
+<p>App Store 및 Microsoft Store 버전은 추가 고양이 및 강아지 팩을 선택적인 일회성 앱 내 구입으로 제공해요. 반려동물 세 마리와 특별한 날의 손님은 언제나 무료예요. 구입은 전적으로 사용자 본인의 계정으로 Apple 또는 Microsoft를 통해 이루어지며, 결제 정보는 앱이나 저희에게 절대 전달되지 않아요. 앱은 스토어에서 팩 가격과 사용자가 보유한 팩 정보만 받으며, 오프라인에서도 알맞은 반려동물을 사용할 수 있도록 그 목록을 컴퓨터에 보관해요. 구입 항목을 복원하면 스토어에 다시 확인해요. 구입 및 결제에는 Apple 또는 Microsoft의 개인정보 처리방침이 적용돼요. 직접 다운로드 버전에는 앱 내 구입이 없어요.</p>
+
+<h2>의견</h2>
+<p>'의견 보내기'를 누르면 사용자의 이메일 앱이 열리고 <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> 앞으로 메시지가 작성돼요. 메시지에는 앱 버전, macOS 또는 Windows 버전, 앱 언어가 포함돼요. 보내기를 누르지 않으면 아무것도 전송되지 않아요. 보내 주신 이메일은 답장과 앱 개선에만 사용돼요.</p>
+
+<h2>데이터를 삭제하는 방법</h2>
+<p><strong>Mac:</strong> 앱을 종료하고 응용 프로그램 폴더에서 휴지통으로 옮기세요. 설정, 휴식 횟수, 이름, 모습까지 삭제하려면 터미널에서 다음을 실행하세요(앱의 설정 &gt; '개인정보 보호 및 데이터 사용…'에도 사용 중인 앱에 맞는 정확한 명령이 표시돼요).</p>
+<p>Pati: <code>defaults delete com.canakarsu.pati; rm -f ~/Library/Application\ Support/com.canakarsu.pati/names.json ~/Library/Application\ Support/com.canakarsu.pati/appearance.json</code></p>
+<p>Hav: <code>defaults delete com.canakarsu.hav; rm -f ~/Library/Application\ Support/com.canakarsu.hav/names.json ~/Library/Application\ Support/com.canakarsu.hav/appearance.json</code></p>
+<p>App Store 버전은 이 모든 정보를 앱 전용 컨테이너 안에 보관해요. 앱을 제거한 후 그 폴더를 삭제하면 모든 정보가 삭제돼요. <code>rm -rf ~/Library/Containers/com.canakarsu.pati</code> (Hav: <code>rm -rf ~/Library/Containers/com.canakarsu.hav</code>)</p>
+<p><strong>Windows:</strong> Windows의 설정 &gt; 앱 &gt; 설치된 앱에서 앱을 제거하세요. Microsoft Store 버전은 이렇게 하면 설정, 이름, 모습도 함께 삭제돼요. 직접 다운로드 버전은 <code>%LOCALAPPDATA%\Pati</code> 또는 <code>%LOCALAPPDATA%\Hav</code> 폴더도 삭제할 수 있어요.</p>
+
+<h2>어린이</h2>
+<p>앱은 어린이를 포함한 누구로부터도 개인정보를 수집하지 않아요.</p>
+
+<h2>사용자의 권리</h2>
+<p>저희는 GDPR 및 튀르키예 KVKK(법률 제6698호)에 따라 사용자가 자신의 데이터에 접근하고 이를 정정 및 삭제할 권리를 존중해요. 앱은 저희에게 아무것도 보내지 않으므로 저희는 사용자에 관한 어떤 기록도 보유하지 않아요. 컴퓨터에 있는 데이터는 위에 설명한 방법으로 언제든지 삭제할 수 있어요.</p>
+
+<h2>변경 사항</h2>
+<p>이 방침이 변경되면 업데이트된 버전이 이 주소와 앱에 게시돼요. 앱이 데이터를 수집하기 시작하는 경우, 이를 사전에 명확히 알리고 필요한 경우 동의를 받을 거예요.</p>
+
+<h2>문의</h2>
+<p>개발자 및 개인정보 처리자: Can Akarsu · <a href="mailto:thebreakpet@gmail.com">thebreakpet@gmail.com</a> · <a href="support.html">지원</a></p>
+</section>
 </main>
+<script>
+(function () {
+  var langs = ["en", "de", "en-GB", "es", "fr", "it", "pt-BR", "tr", "ja", "zh-Hans", "ko"], other = {"en": "Support", "de": "Support", "en-GB": "Support", "es": "Soporte", "fr": "Assistance", "it": "Assistenza", "pt-BR": "Suporte", "tr": "Destek", "ja": "サポート", "zh-Hans": "支持", "ko": "지원"}, page = "support.html";
+  var secs = {}; langs.forEach(function (l) { secs[l] = document.getElementById(l); });
+  function match(p) {
+    p = (p || "").toLowerCase();
+    if (/^en-(gb|au|nz|ie|in|za)/.test(p)) return "en-GB";
+    if (/^en/.test(p)) return "en";
+    if (/^zh/.test(p)) return /hant|-tw|-hk|-mo/.test(p) ? null : "zh-Hans";
+    if (/^pt/.test(p)) return "pt-BR";
+    var two = p.slice(0, 2);
+    return ["tr", "de", "fr", "es", "it", "ja", "ko"].indexOf(two) >= 0 ? two : null;
+  }
+  function pick() {
+    var h = decodeURIComponent(location.hash.slice(1));
+    if (secs[h]) return h;
+    var prefs = navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language];
+    for (var i = 0; i < prefs.length; i++) { var m = match(prefs[i]); if (m) return m; }
+    return "en";
+  }
+  var sel = document.getElementById("lang"), link = document.getElementById("other");
+  function show(l) {
+    langs.forEach(function (k) { secs[k].classList.toggle("on", k === l); });
+    document.documentElement.lang = l;
+    sel.value = l;
+    link.textContent = other[l];
+    link.href = page + "#" + l;
+  }
+  sel.addEventListener("change", function () { history.replaceState(null, "", "#" + sel.value); show(sel.value); window.scrollTo(0, 0); });
+  window.addEventListener("hashchange", function () { show(pick()); });
+  show(pick());
+})();
+</script>
 </body>
 </html>
